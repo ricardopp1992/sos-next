@@ -1,0 +1,44 @@
+.navbar {
+  /* position: relative;
+  z-index: 2; */
+  padding: 15px 20px 10px;
+  background-color: #1B1B1B;
+}
+
+.logo {
+  width: 75%;
+}
+
+.nav_toggle {
+  padding-right: 0;
+  color: white !important;
+}
+
+.nav_toggle, .nav_toggle:hover, .nav_toggle:active {
+  border: none;
+  outline: none;
+}
+
+.nav_link {
+  margin: 0 9px;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.nav_btn {
+  padding: 0;
+  margin: 15px 25px;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    padding: 30px 80px 6px;
+  }
+  .logo {
+    width: 100%;
+  }
+  .nav_btn {
+    padding: 0;
+    margin: 0 0 0 35px;
+  }
+}
