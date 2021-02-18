@@ -5,6 +5,7 @@ import Logo from '../Logo/Logo';
 
 import styles from './Navbar.module.scss'
 
+
 export default function Navmenu() {
   return (
     <Navbar className={styles.navbar} collapseOnSelect expand="lg" variant="dark" fixed="top">
@@ -13,11 +14,11 @@ export default function Navmenu() {
       </Navbar.Brand>
       <Navbar.Toggle className={styles.nav_toggle} aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse className="pt-3 justify-content-end" id="responsive-navbar-nav">
-        <Nav className="dropdown" className={styles.sub_menu}>
+        <Nav className="dropdown sub-menu" >
           <Link href="/#"  >
           <a className={styles.nav_link}>Services</a>
           </Link>
-          <Nav className="dropdown-menu navbar bg-dark" className={styles.sub_menu_content}>
+          <Nav className="dropdown-menu navbar bg-dark sub-menu-content" >
             <Link href="/services">
               <a className={`${styles.nav_link} dropdown-item text-white`}>Services</a>
             </Link>
@@ -35,11 +36,11 @@ export default function Navmenu() {
             </Link>
           </Nav>
         </Nav>
-        <Nav className="dropdown" className={styles.sub_menu}>
+        <Nav className="dropdown sub-menu">
           <Link href="/#" className="dropdown-toggle">
           <a className={styles.nav_link} >About</a>
           </Link>
-          <Nav className="dropdown-menu navbar bg-dark" className={styles.sub_menu_content}>
+          <Nav className="dropdown-menu navbar bg-dark sub-menu-content" >
             <Link href="/about">
               <a className={`${styles.nav_link} dropdown-item text-white`}>About</a>
             </Link>
