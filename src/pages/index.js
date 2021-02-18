@@ -31,7 +31,7 @@ export default function Home() {
       <div className={styles.about_section}>
         <Row>
           <Col lg={6}>
-            <img className={styles.about_img} src="/img/home/about.jpg" alt="about" />
+            <img className={`${styles.about_img} rounded-xl`} src="/img/home/about.jpg" alt="about" />
           </Col>
           <Col lg={6}>
             <div className={styles.about_content}>

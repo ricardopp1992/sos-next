@@ -75,6 +75,10 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: white;
 }
 
+.rounded-xl{
+  border-radius: 21em;
+}
+
 @media only screen and (min-width: 992px) {
   .primary-title {
     margin-bottom: 30px;

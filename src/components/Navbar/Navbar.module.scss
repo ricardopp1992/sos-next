@@ -20,13 +20,33 @@
 }
 
 .nav_link {
-  margin: 0 9px;
+  margin: 0.3rem .5rem;
   font-size: 16px;
   line-height: 19px;
 }
 
+.sub_menu{
+  position: relative;
+  display: inline-block;
+}
+
+.sub_menu_content{
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.sub_menu:hover .sub_menu_content {
+  display: block;
+  background-color: #1B1B1B; ;
+}
+
 .nav_btn {
   padding: 0;
+  width: fit-content;
   margin: 15px 25px;
 }
 
