@@ -13,19 +13,7 @@ export default function Home() {
       {/* <img src="/testback-1.png" alt="" style={{ position: "absolute", "zIndex": "99", top: "0", width: "100%", opacity: "0.5" }} /> */}
       <Hero />
       <HomeClients />
-
-      <div className={styles.intro_section}>
-        <img className={styles.intro_pattern} src="/img/home/intro-pattern.svg" alt="intro" />
-        <div className={styles.intro_subtitle}>
-          <h3 className="subtitle">
-            No matter where you are, your safety and <br className="d-none d-lg-block" />
-              protecting your assets is our mission.
-            </h3>
-        </div>
-      </div>
-
       <Services />
-
       <div className={styles.review_section}>
         <img className={styles.review_img} src="/img/home/flag.jpg" alt="flag" />
         <div className={styles.review_content}>
