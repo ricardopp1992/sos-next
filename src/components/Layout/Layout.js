@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Footer from '../Footer';
 import Navbar from '../Navbar/index';
 
-const Layout = ({ title, mainClassName = "", children }) => {
+const Layout = ({ title, mainClassName = "", children, footerStyle = false }) => {
   return (
     <>
       <Head>
@@ -19,7 +19,7 @@ const Layout = ({ title, mainClassName = "", children }) => {
           children
         }
       </main>
-      <Footer />
+      <Footer footerStyle={footerStyle} />
     </>
   );
 }

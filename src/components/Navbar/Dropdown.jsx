@@ -7,9 +7,9 @@ const Dropdown = ({ children, title }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   useEffect(() => {
-    if (window) {
+   if (window || isMobile) {
       setIsMobile(window.innerWidth < 992);
-    }
+   }
   }, []);
 
   return (
