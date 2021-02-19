@@ -214,7 +214,7 @@ const ServiceWhitOutListL = ({ img, title, paragraph, anchor }) => {
             </Link>
           </div>
         </Col>
-        <Col lg={7} xl={5}>
+        <Col lg={6} xl={5}>
           <img
             className={`${styles.protect_img} rounded-xl`}
             src={img}

@@ -12,14 +12,26 @@
 }
 
 .top_pattern {
-  position: absolute;
-  top: -2vw;
-  width: 100%;
-  // height: 715px;
-  object-fit: cover;
+  display: none;
+}
+
+@media only screen and (min-width: 480px) {
+  .top_content{
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
+  .top_pattern{
+    display: block;
+    position: absolute;
+    top: -2vw;
+    width: 100%;
+    // height: 715px;
+    object-fit: cover;
+  }
+
   .top_section {
     margin-top: 100px;
   }
@@ -94,6 +106,7 @@
   .protect_section {
     padding: 55px 80px;
   }
+
   .protect_img {
     width: auto;
     max-width: 100%;
@@ -110,6 +123,26 @@
     font-size: 21px;
     line-height: 42px;
   }
+}
+
+@media only screen and (min-width: 992px) {
+  .protect_content{
+    margin-top: 15px;
+  }
+  .services_item {
+    font-size: 16px;
+    line-height: 38px;
+  }
+  
+}
+
+@media only screen and (min-width: 1204px) {
+  .services_item {
+    font-size: 21px;
+    line-height: 42px;
+  }
+
+
 }
 
 /* Armed Section */
@@ -326,10 +359,10 @@
 }
 
 .cta_button{
-  padding-top: 25rem;
+  padding-top: 18rem;
   z-index: 5;
   display: flex;
-  height: 38rem;
+  height: 32rem;
   justify-content: space-between;
 
   h3{
@@ -339,18 +372,26 @@
   }
   div{   
     padding-top: 2rem;
-    text-align: right;
-    padding-right: 14rem;
+    text-align: center;
 
   }
 }
 
 @media only screen and (min-width: 992px) {
-  .blue_btn_wrapper {
-    //margin-top: 127px;
-    padding-right: 95px;
-  }
   .bottom_pattern {
     height: auto;
   }
+
+  //.cta_button{
+  //  height: 15rem;
+  //  padding-top: 8rem;
+  //  margin-left: -1rem;
+  //  h3{
+  //    font-size: 21px;
+  //  }
+  //  div{
+  //    padding-right: 2rem;
+  //  }
+  //}
 }
+
