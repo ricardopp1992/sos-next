@@ -10,42 +10,47 @@ const Services = () => {
       <h3 className="subtitle">Services</h3>
       <Row>
         <Col lg={4}>
-          <div className={styles.service_item}>
-            <img className={styles.service_img} src="/img/home/service-1.jpg" alt="service" />
-            <h4 className={styles.service_title}>Personal</h4>
-            <p className={styles.service_detail}>
-              No matter your status, wealth, or popularity, enjoy
-              life while resting easy knowing you are protected.
-            </p>
-            <Link href="/"><a>Read More</a></Link>
-          </div>
+          <ServiceItem
+            title="Personal"
+            description={`No matter your status, wealth, or popularity, enjoy life while resting easy knowing you are protected.`}
+            image="/img/home/service-1.jpg"
+            href="/personal" />
         </Col>
         <Col lg={4}>
-          <div className={styles.service_item}>
-            <img className={styles.service_img} src="/img/home/service-2.jpg" alt="service" />
-            <h4 className={styles.service_title}>Corporate</h4>
-            <p className={styles.service_detail}>
+          <ServiceItem
+            title="Corporate"
+            description={`
               Protect your assets and team incase of heated,
               tense, or threatening situations.
-            </p>
-            <Link href="/"><a>Read More</a></Link>
-          </div>
+            `}
+            image="/img/home/service-2.jpg"
+            href="/corporate" />
         </Col>
         <Col lg={4}>
-          <div className={styles.service_item}>
-            <img className={styles.service_img} src="/img/home/service-3.jpg" alt="service" />
-            <h4 className={styles.service_title}>International</h4>
-            <p className={styles.service_detail}>
+          <ServiceItem
+            title="International"
+            description={`
               For your transportation, travel, and corporate
               needs. We are not there for international relations,
               but to avoid an international incident.
-            </p>
-            <Link href="/"><a>Read More</a></Link>
-          </div>
+            `}
+            image="/img/home/service-3.jpg"
+            href="/international" />
         </Col>
       </Row>
     </div>
   );
 };
+
+const ServiceItem = ({ title, description, image, href}) => {
+  return (
+    <div className={styles.service_item}>
+      <img className={`${styles.service_img} rounded-xl`} src={image} alt="service" />
+      <h4 className={styles.service_title}>{ title }</h4>
+      <p className={styles.service_detail}>{ description }</p>
+      <Link href={href}><a>Read More</a></Link>
+    </div>
+  );
+}
 
 export default Services;
