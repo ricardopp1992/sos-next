@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Col, Row } from 'react-bootstrap';
 
-import styles from '../../assets/styles/index.module.css';
+import styles from '../../../assets/styles/index.module.css';
 
 const Services = () => {
   return (

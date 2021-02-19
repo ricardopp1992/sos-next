@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-import styles from "../../assets/styles/index.module.css";
+import styles from "../../../assets/styles/index.module.css";
 
 const HomeClients = () => {
   return (

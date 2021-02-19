@@ -1,24 +1,16 @@
 import { Row, Col } from 'react-bootstrap';
 
 import Layout from '../../components/Layout/Layout';
+import HeroService from '../../components/services/HeroService';
+import ServiceContent from '../../components/services/ServiceContent';
 
-import styles from './services.module.css';
+import styles from '../../assets/styles/components/services.module.scss';
 
 export default function Services() {
   return (
-    <Layout title="Services">
-      <div className={styles.top_section}>
-        <div className={styles.top_content}>
-          <h1 className="primary-title">Services</h1>
-          <p className={styles.top_detail}>
-            SOS Private Security offers consulting, operations, events, and ongoing relationships with our clients to
-            address their security needs and concerns. Our list of services is extensive and we are always working
-            with clients to create a security experience that matches their needs.
-            </p>
-        </div>
-        <img className={styles.top_pattern} src="/img/services/top-pattern.svg" alt="top pattern" />
-      </div>
-
+    <Layout title="Services" mainClassName="services">
+      <HeroService styles={styles} />
+      <ServiceContent />
       <div className={styles.protect_section}>
         <Row>
           <Col lg={7} xl={6}>

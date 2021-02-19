@@ -1,0 +1,10 @@
+/** SERVICE */
+main.services {
+  @include desktops {
+    background-color: $sosGray;
+  }
+
+  .top-detail {
+    margin-top: 8rem;
+  }
+}

@@ -1,9 +1,9 @@
 import { Col, Row } from 'react-bootstrap';
 
 import Layout from '../components/Layout/Layout';
-import Hero from '../components/Hero/HomeHero';
-import HomeClients from '../components/HomeClients/HomeClients';
-import Services from '../components/Services/Services';
+import Hero from '../components/home/Hero/HomeHero';
+import HomeClients from '../components/home/HomeClients/HomeClients';
+import Services from '../components/home/Services/Services';
 
 import styles from '../assets/styles/index.module.css';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import styles from '../../assets/styles/index.module.css';
+import styles from '../../../assets/styles/index.module.css';
 
 const HomeHero = () => {
   return (
