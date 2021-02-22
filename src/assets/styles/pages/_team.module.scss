@@ -1,0 +1,70 @@
+/* Content 1 */
+
+.content_text {
+  align-content: center;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  padding-left: 7rem;
+  padding-right: 5rem;
+}
+
+.content_img1 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  .img1 {
+    width: 100%;
+    padding-left: 2rem;
+    margin-left: 1rem;
+  }
+
+  .content_img2 {
+    margin-left: -3rem;
+
+  }
+}
+
+/* Team Member */
+
+.principal_content {
+  padding-left: 8rem;
+  padding-right: 6rem;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+  .special_color {
+    color: #4aa8ff;
+  }
+}
+
+/*Leadership */
+
+.leadership_content {
+  padding-left: 8rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+
+  .title_color {
+    color: #4aa8ff;
+    padding-bottom: 2rem;
+  }
+
+  .leadership_text {
+    padding-right: 2rem;
+   }
+
+  .leadership_list {
+    list-style: none;
+    padding-bottom: 5rem;
+  }
+}
+
+/* Join the team */
+
+.Join_content{
+  background-color: #4aa8ff;
+  height: 25rem;
+  padding-left: 8rem;
+  padding-right: 5rem;
+  padding-top: 5rem;
+}
