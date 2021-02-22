@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { Col, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 import styles from "../../assets/styles/components/services.module.scss";
 
@@ -73,13 +73,13 @@ const CardServices = () => {
       >
         <p>Workplace Discharge</p>
       </ServicesImgLeftt>
-      <ServiceWhitOutListL
+      <ServiceWhitoutListL
         img="/img/services/services-img6.jpg"
         title="Training & Courses"
         paragraph="Our team can prepare you to be the best"
         anchor="Read More >>>"
       />
-      <ServiceWhitOutListR
+      <ServiceWhitoutListR
         img="/img/services/services-img7.jpg"
         title="Consulting"
       />
@@ -95,17 +95,17 @@ const ServicesImgLeftt = ({
   children,
 }) => {
   return (
-    <div className={styles.protect_section}>
-      <Row>
-        <Col lg={7} xl={6}>
+    <Container fluid>
+      <Row className={`${styles.protect_section} mx-0 my-5 mx-lg-5`}>
+        <Col sm={12} lg={6} >
           <img
             className={`${styles.protect_img} rounded-xl`}
             src={img}
             alt="protect"
           />
         </Col>
-        <Col lg={5} xl={6} className="d-flex align-items-center">
-          <div className={styles.protect_content}>
+        <Col sm={12} lg={6} className="d-flex align-items-center justify-content-start">
+          <div className={`${styles.protect_content}`}>
             <h3 className="subtitle">{title}</h3>
             <ul className={styles.services_list}>
               {list &&
@@ -124,7 +124,7 @@ const ServicesImgLeftt = ({
           </div>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 
@@ -136,93 +136,81 @@ const ServicesImgRight = ({
   children,
 }) => {
   return (
-    <div className={styles.protect_section}>
-      <Row>
-        <Col
-          lg={5}
-          xl={6}
-          className="d-flex align-items-center justify-content-start"
-        >
-          <div className={``}>
-            <h3 className="subtitle">{title}</h3>
-            <ul className={styles.services_list}>
-              {list &&
-                list.map((item) => (
-                  <li className={styles.services_item} key={item}>
-                    <img
-                      className={styles.chevrons_right}
-                      src={arrowIcon}
-                      alt="arrow"
-                    />
-                    {item}
-                  </li>
-                ))}
-              {children && children}
-            </ul>
-          </div>
-        </Col>
-        <Col lg={7} xl={6}>
-          <img
-            className={`${styles.protect_img} rounded-xl`}
-            src={img}
-            alt="armed"
-          />
-        </Col>
-      </Row>
-    </div>
+    <Row className="mx-0 my-5 mx-lg-5">
+      <Col sm={12} lg={6} className="d-flex align-items-center justify-content-start" >
+        <div className={styles.protect_section}>
+          <h3 className="subtitle">{title}</h3>
+          <ul className={styles.services_list}>
+            {list &&
+              list.map((item) => (
+                <li className={styles.services_item} key={item}>
+                  <img
+                    className={styles.chevrons_right}
+                    src={arrowIcon}
+                    alt="arrow"
+                  />
+                  {item}
+                </li>
+              ))}
+            {children && children}
+          </ul>
+        </div>
+      </Col>
+      <Col sm={12} lg={6}>
+        <img
+          className={`${styles.protect_img} rounded-xl`}
+          src={img}
+          alt="armed"
+        />
+      </Col>
+    </Row>
   );
 };
 
-const ServiceWhitOutListR = ({ img, title, paragraph }) => {
+const ServiceWhitoutListR = ({ img, title, paragraph }) => {
   return (
-    <div
-      
-      className={styles.service_background}
-    >
-      <Row className={styles.protect_section}>
-        <Col lg={7} xl={7}>
+    <Container fluid>
+      <Row className={`${styles.protect_section} ${styles.service_background} px-0 p-lg-5`}>
+        <Col sm={12} lg={6}>
           <img
             className={`${styles.protect_img} rounded-xl`}
             src={img}
             alt="protect"
           />
         </Col>
-        <Col lg={5} xl={5} className="d-flex align-items-center">
-          <div className={styles.protect_content}>
+        <Col sm={12} lg={6} className="d-flex align-items-center">
+          <div className={`${styles.protect_content}  mb-5 mg-lg-10`}>
             <h3 className="subtitle text-dark">{title}</h3>
             <p>{paragraph}</p>
           </div>
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 
-const ServiceWhitOutListL = ({ img, title, paragraph, anchor }) => {
+const ServiceWhitoutListL = ({ img, title, paragraph, anchor }) => {
   return (
-    <div
-      className={styles.protect_section}
-      className={styles.service_background}
-    >
-      <Row>
-        <Col lg={5} xl={6} className="d-flex align-items-center justify-content-center">
+    <Container fluid>
+      <Row className={`${styles.service_background} px-0 p-lg-5`}>
+        <Col
+          sm={12} lg={6}
+          className={`${styles.protect_section} d-flex align-items-center justify-content-start`}>
           <div className={styles.protect_content}>
             <h3 className="subtitle text-dark">{title}</h3>
             <p className="text-dark">{paragraph}</p>
-            <Link href="/#">
-              <a className="text-dark fs-6">{anchor}</a>
-            </Link>
+            <Link href="/#"><a className="text-dark fs-6">{anchor}</a></Link>
           </div>
         </Col>
-        <Col lg={6} xl={5}>
+        <Col sm={12} lg={6}>
           <img
-            className={`${styles.protect_img} rounded-xl`}
             src={img}
+            className={`w-100 w-lg-80 rounded-xl`}
             alt="protect"
           />
         </Col>
       </Row>
-    </div>
+    </Container>
   );
 };
 

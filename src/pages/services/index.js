@@ -15,7 +15,7 @@ export default function Services() {
       mainClassName="services">
       <HeroService styles={styles} />
       <ServiceContent />
-      <CarsServices />     
+      <CarsServices />
     </Layout>
   );
 }

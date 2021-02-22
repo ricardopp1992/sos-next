@@ -2,24 +2,28 @@ import React from "react";
 import Link from "next/link";
 import { Form, Button } from "react-bootstrap";
 
-import styles from "../../assets/styles/components/services.module.scss";
 import stylesF from "./Footer.module.css";
 
 const FooterServices = () => {
   return (
     <>
-      <footer className={`${stylesF.footer} ${styles.footer_service}`}>
+      <footer className={`${stylesF.footer} footer_service`}>
         <img
-          className={`${styles.bottom_pattern} z-index-2`}
+          className={`${`bottom_pattern`} z-index-2 d-none d-lg-block`}
           src="/img/services/footer-service-pattern.svg"
           alt="bottom pattern"
         />
-        <div className={styles.cta_button}>
-          <h3 className="subtitle w-50">
+        <img
+          className={`${`bottom_pattern`} z-index-2 d-lg-none`}
+          src="/img/services/patter_service_footer_mobile.png"
+          alt="bottom pattern"
+        />
+        <div className="cta_button">
+          <h3 className="subtitle ml-0 w-100 w-lg-50">
             Our agile and flexible approach ensures that we evaluate your unique
             situation from all angles.
           </h3>
-          <div className="w-50 ">
+          <div className="w-100 w-lg-50">
             <a className="blue_btn" href="#">
               Contact us to discuss your situation.
             </a>
@@ -53,20 +57,6 @@ const FooterServices = () => {
         </div>
       </footer>
     </>
-    //   <>
-    // <div className="">
-    //   <h3 className="subtitle">
-    //     Our agile and flexible approach ensures that we
-    //     evaluate your unique situation from all angles.
-    //   </h3>
-    //   <div>
-    //   <a className=" blue_btn" href="#">
-    //       Contact us to discuss your situation.
-    //   </a>
-    //   </div>
-    //       <img className={styles.bottom_pattern} src="/img/services/footer-service-pattern.svg" alt="bottom pattern" />
-    //     </div>
-    // </>
   );
 };
 

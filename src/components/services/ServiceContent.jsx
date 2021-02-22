@@ -1,10 +1,10 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Col, Row, Container } from 'react-bootstrap';
 
 const ServiceContent = () => {
   return (
-    <Container>
-      <Row className="top-detail">
+    <Container fluid>
+      <Row className="top-detail mx-0 mx-md-5">
         <Col lg={3}>
           <h3>What we do</h3>
         </Col>
