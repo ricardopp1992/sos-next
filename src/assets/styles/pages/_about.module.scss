@@ -1,5 +1,6 @@
-/*APPROACH SECTION */
+@import '../controls/theme-media-query.scss';
 
+/*APPROACH SECTION */
 .all_content {
   height: 35rem;
   background-color: #c4c4c8;
@@ -24,7 +25,7 @@
   .pattern {
     position: absolute;
     width: 100%;
-    top: 14rem;
+    top: 52rem;
   }
 
   .big_content2 {
@@ -72,25 +73,20 @@
 }
 
 /* Value section */
-
-.container {
+.values_section {
   background-color: #bdbdbd;
-  height: 45rem;
+  color: #121212;
+  padding-bottom: 3rem;
 
-  .img_content {
-    width: 50%;
-    display: inline-block;
+  h1, h3 {
+    font-weight: bold;
   }
 
-  .values_section {
-    float: right;
-    width: 50%;
-    display: block;
-    padding-right: 8rem;
+  .values_content {
+    padding: 0 1rem;
 
-    .text_color {
-      color: black;
-      padding-bottom: 1rem;
+    @include desktops {
+      padding: 0 7rem 0 10rem;
     }
   }
 }
@@ -106,7 +102,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 225px;
     object-fit: cover;
   }
 
