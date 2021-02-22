@@ -1,6 +1,9 @@
 .navbar-collapse {
   display: flex;
   flex-direction: column;
+  background-color: $sosBlack;
+  width: 100%;
+  padding: .5rem 0 !important;
 
   @include desktops {
     flex-direction: row;
@@ -18,7 +21,7 @@
     }
 
     .dropdown-item:hover, .dropdown-item:focus {
-      background-color: transparent;
+      background-color: $sosBlack;
       color: gray !important;
     }
   }

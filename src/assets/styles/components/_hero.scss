@@ -1,80 +1,51 @@
-.hero_section.hero-2 {
-  object-fit: cover;
-  min-height: 50vh;
+.hero_section {
   position: relative;
 
-  @include mobile-lg {
-    margin-top: 3rem;
-  }
-
   .hero_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-    padding: 50px 20px;
-    
-    .primary-title {
-      font-size: 2.5rem;
-      margin-top: 5rem;
-
-      @include mobile-lg {
-        position: absolute;
-        margin-top: 0;
-      }
-    }
-  }
-
-  .hero_img_wrapper {
     position: absolute;
-    top: 8rem;
+    top: 7rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 60;
 
-    @include tablet {
-      position: relative;
-      top: -10rem;
+    @include mobile-lg {
+      top: 5rem;
     }
 
     @include desktops {
-      top: 10rem;
+      top: 8rem;
     }
 
-    @include large-desktops {
-      top: 15.5rem;
+    @include large-desktops-mid {
+      top: 27%;
     }
+  }
 
-    .hero_img {
+
+  .hero_pattern, .hero_img {
+    object-fit: cover;
+    object-position: top;
+    width: 200vw;
+    height: 100vw;
+
+    @include mobile-lg {
+      object-fit: unset;
+      object-position: unset;
       width: 100%;
       height: auto;
-      margin-top: -46vw;
-      object-fit: cover;
-      object-position: top;
-      height: 130vw;
-      max-width: 100vw;
-      
-      @include mobile-lg {
-        margin-top: -22.2vw;
-        height: auto;
-      }
     }
+  }
 
-    .hero_pattern {
-      position: absolute;
-      top: -22.2vw;
-      z-index: 1;
-      left: 0;
-      width: 100%;
-      margin-top: -25vw;
-      object-fit: cover;
-      object-position: top;
-      height: 130vw;
-      max-width: 100vw;
+  .hero_pattern {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+  }
 
-      @include mobile-lg {
-        top: 2.5vw;
-        width: 100%;
-        height: auto;
-      }
-    }
+  .hero_img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 5;
   }
 }
