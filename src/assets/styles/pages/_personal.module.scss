@@ -1,0 +1,127 @@
+@import '../variables.scss';
+@import '../controls/theme-media-query.scss';
+
+.personal_service_content {
+  background-color: $sosGray;
+  padding-bottom: 2rem;
+
+  h2 {
+    padding-top: 5rem;
+  }
+
+  .personal_content {
+    display: flex;
+
+    @include desktops {
+      margin: 3rem 0;
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .content_children {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 3rem;
+
+      @include desktops {
+        margin-top: 0;
+        margin-left: 2rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin: 1rem 0;
+      }
+
+      
+      div {
+        margin-top: 1rem;
+
+        a {
+          width: max-content;
+        }
+
+        span {
+          font-weight: bold;
+          margin-left: .5rem;
+  
+          @include desktops {
+            margin-left: 2rem;
+          }
+        }
+      }
+
+    }
+
+    .image_right {
+      order: 2;
+    }
+
+    .content_left{
+      order: 1;
+      margin-left: 0;
+
+      @include desktops {
+        padding-right: 12rem;
+      }
+    }
+  }
+}
+
+/* QUOTE AND CTA */
+.quote_cta_section {
+  position: relative;
+  z-index: 0;
+
+  .gray_block {
+    background-color: $sosGray;
+    height: 7rem;
+    width: 100%;
+  }
+
+  .text_and_patter {
+    .quote_text {
+      position: absolute;
+      top: 21%;
+      left: 50%;
+      font-size: 1.5rem;
+      color: #fff;
+      z-index: 5;
+      text-align: center;
+      transform: translate(-50%, 0);
+    }
+  
+    .quote_patter {
+      position: absolute;
+      top: 0rem;
+      z-index: 3;
+    }
+  }
+
+
+  .cta_content {
+    background-color: $sosLightGray;
+    width: 100%;
+    padding: 15rem 0;
+    color: $sosBlack;
+
+    a {
+      color: #fff;
+
+      @include desktops {
+        margin-top: 5rem;
+      }
+    }
+  }
+}

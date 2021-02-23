@@ -1,17 +1,14 @@
+@import '../variables.scss';
+
 /* Content 1 */
 
 .content_text {
   align-content: center;
   padding-top: 10rem;
   padding-bottom: 5rem;
-  padding-left: 7rem;
-  padding-right: 5rem;
 }
 
 .content_img1 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-
   .img1 {
     width: 100%;
     padding-left: 2rem;
@@ -27,8 +24,6 @@
 /* Team Member */
 
 .principal_content {
-  padding-left: 8rem;
-  padding-right: 6rem;
   padding-top: 5rem;
   padding-bottom: 3rem;
 
@@ -38,53 +33,64 @@
 }
 
 /*Leadership */
-
 .background_leadership {
-  background-image: url('/img/team/leadership-pattern.svg');
+  background: url('/img/team/leadership-pattern.svg') no-repeat;
+  background-position: 0rem -10rem;
+  background-size: 100%;
+  padding-top: 9rem;
+
+  .leadership_content {
+    padding: 2rem 0rem;
+
+    .title_color {
+      color: #4aa8ff;
+      padding-bottom: 2rem;
+    }
+
+    .leadership_text {
+      padding-right: 2rem;
+    }
+
+    .leadership_list {
+      list-style: none;
+      padding-bottom: 5rem;
+    }
+  }
 }
 
-.leadership_content {
-  padding-left: 8rem;
-  padding-right: 5rem;
-  padding-top: 2rem;
-
-  .title_color {
-    color: #4aa8ff;
-    padding-bottom: 2rem;
-  }
-
-  .leadership_text {
-    padding-right: 2rem;
-   }
-
-  .leadership_list {
-    list-style: none;
-    padding-bottom: 5rem;
-  }
-}
 
 /* Join the team */
-
 .Join_content {
   background-color: #4aa8ff;
-  height: 38rem;
-  padding-left: 6rem;
-  padding-right: 5rem;
   padding-top: 5rem;
+  position: relative;
 
-  .join_text{
+  .join_text {
     width: 78%;
     padding-bottom: 2rem;
   }
 
   .security_btn {
-  padding: 11px 16px;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 19px;
-  background-color: black;
-  transition: 0.3s;
+    padding: 11px 16px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 19px;
+    background-color: black;
+    transition: 0.3s;
+  }
+
+  img {
+    z-index: 5;
+    position: relative;
+  }
+
+  .join_content_bottom {
+    background-color: $sosBlack;
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
   }
 }
-
-

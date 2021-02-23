@@ -5,7 +5,7 @@ import styles from '../../assets/styles/pages/_team.module.scss'
 
 const Content1 = () => {
   return (
-    <Container fluid >
+    <Container>
       <Row className={styles.content_text} >
         <Col lg={2} >
           <h1> Team </h1>

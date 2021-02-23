@@ -1,16 +1,17 @@
 import { Container, Row, Col } from 'react-bootstrap';
 
 
-import styles from '../../assets/styles/pages/_team.module.scss'
+import styles from '../../assets/styles/pages/_team.module.scss';
 
 const Leadership = () => {
   return (
-    <Container fluid className={styles.background_leadership} >
-      <Row className={styles.leadership_content}>
-        <h1 className="w-100 pb-5 pl-2" >Leadership</h1>
-        <Col lg={4} >
-          <h2 className={styles.title_color}>Robert J. Orseske, Jr.</h2>
-          <p className={styles.leadership_text}>Robert brings a professional decorum providing
+    <div className={styles.background_leadership}>
+      <Container>
+        <Row className={styles.leadership_content}>
+          <h1 className="w-100 pb-5 pl-2 my-lg-5" >Leadership</h1>
+          <Col lg={4} >
+            <h2 className={styles.title_color}>Robert J. Orseske, Jr.</h2>
+            <p className={styles.leadership_text}>Robert brings a professional decorum providing
             security operations in protecting your assets and
             personnel. His educational and professional
             financial background will ensure that security
@@ -22,32 +23,33 @@ const Leadership = () => {
             Robert abetted the creation and implementation of
             the S.O.S. Private Security State of Illinois approved
             firearm, baton, handcuff, and scenario based
-            training exercises. </p>
-        </Col>
-        <Col lg={4}>
-          <img  src="/img/team/leadership.png" />
-        </Col>
-        <Col lg={4}>
-          <h2 className={styles.title_color}>Geno W. Frenzel, Jr.</h2>
-          <p>Our company has combined over 25 years of
+              training exercises. </p>
+          </Col>
+          <Col lg={4} className="d-flex justify-content-center">
+            <img src="/img/team/leadership.png" />
+          </Col>
+          <Col lg={4}>
+            <h2 className={styles.title_color}>Geno W. Frenzel, Jr.</h2>
+            <p>Our company has combined over 25 years of
             extensive training and expertise that allows us to
             create customized security modules per client as
-            client's needs vary. </p>
-        </Col>
-      </Row>
-      <Row className={styles.leadership_content}>
-      <LeadershipList 
-        title="Credentials"
-        arrow="/img/services/chevrons-right.png"
-        list={credentials}
-      />
-      <LeadershipList 
-        title="Awards"
-        arrow="/img/services/chevrons-right.png"
-        list={awards}
-      />
-      </Row>
-    </Container>
+              client's needs vary. </p>
+          </Col>
+        </Row>
+        <Row className={`${styles.leadership_content}`}>
+          <LeadershipList
+            title="Credentials"
+            arrow="/img/services/chevrons-right.png"
+            list={credentials} />
+          <LeadershipList
+            title="Awards"
+            arrow="/img/services/chevrons-right.png"
+            list={awards}
+            className="offset-lg-4"/>
+        </Row>
+      </Container>
+
+    </div>
   );
 };
 
@@ -69,25 +71,25 @@ const awards = [
   "Army Achievement Medal",
 ];
 
-const LeadershipList = ({ title, list,arrow, children}) =>{
-  return(
-      <Col lg={6} className="d-block ">
+const LeadershipList = ({ title, list, arrow, children, className = "" }) => {
+  return (
+    <Col lg={4} className={`d-block ${className}`}>
       <h1 className="w-100 pb-5 pt-5">{title}</h1>
       <ul className={styles.leadership_list}>
         {list &&
           list.map((item) => (
-            <li  key={item} >
+            <li key={item} >
               <img
                 src={arrow}
                 alt="arrow"
-                />
-                {item}
+              />
+              {item}
             </li>
           ))}
         {children && children}
       </ul>
-      </Col>
-  )
-}
+    </Col>
+  );
+};
 
-export default Leadership
+export default Leadership;
