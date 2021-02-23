@@ -5,7 +5,7 @@ import styles from '../../assets/styles/pages/_team.module.scss'
 
 const Leadership = () => {
   return (
-    <Container fluid >
+    <Container fluid className={styles.background_leadership} >
       <Row className={styles.leadership_content}>
         <h1 className="w-100 pb-5 pl-2" >Leadership</h1>
         <Col lg={4} >
