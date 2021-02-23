@@ -1,3 +1,9 @@
 @import './controls/theme-media-query.scss';
 
+@import './variables.scss';
+
 @import './components/home.scss';
+@import './components/menu.scss';
+@import './components/content';
+@import './components/footer';
+@import './components/hero';

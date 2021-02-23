@@ -63,10 +63,11 @@
 }
 
 .partner_group {
-  display: flex;
+  /*display: flex;*/
   justify-content: space-around;
   width: 60%;
   margin: 0 auto;
+  text-align: center;
   /* margin-left: -10px;
   margin-right: -10px; */
 }
@@ -257,6 +258,7 @@
   }
 }
 
+
 /* Connect Section */
 
 .connect_section {
@@ -289,3 +291,7 @@
     top: 40%;
   }
 }
+
+
+
+

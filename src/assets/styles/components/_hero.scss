@@ -1,0 +1,51 @@
+.hero_section {
+  position: relative;
+
+  .hero_content {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 60;
+
+    @include mobile-lg {
+      top: 5rem;
+    }
+
+    @include desktops {
+      top: 8rem;
+    }
+
+    @include large-desktops-mid {
+      top: 27%;
+    }
+  }
+
+
+  .hero_pattern, .hero_img {
+    object-fit: cover;
+    object-position: top;
+    width: 200vw;
+    height: 100vw;
+
+    @include mobile-lg {
+      object-fit: unset;
+      object-position: unset;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .hero_pattern {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .hero_img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 5;
+  }
+}

@@ -1,9 +1,11 @@
 import Link from 'next/link';
-import { Navbar, Nav } from 'react-bootstrap'
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 import Logo from '../Logo/Logo';
+import Dropdown from './Dropdown';
 
-import styles from './Navbar.module.scss'
+import styles from './Navbar.module.scss';
+
 
 export default function Navmenu() {
   return (
@@ -12,17 +14,30 @@ export default function Navmenu() {
         <Logo />
       </Navbar.Brand>
       <Navbar.Toggle className={styles.nav_toggle} aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse className="pt-3 justify-content-end" id="responsive-navbar-nav">
-        <Nav.Link><Link href="/services"><a className={styles.nav_link} >Services</a></Link></Nav.Link>
-        <Nav.Link><Link href="#"><a className={styles.nav_link} >About</a></Link></Nav.Link>
-        <Nav.Link><Link href="#"><a className={styles.nav_link} >Contact</a></Link></Nav.Link>
-        <Nav.Link><Link href="#"><a className={styles.nav_link} >Resources</a></Link></Nav.Link>
-        <Nav.Link className={styles.nav_btn}>
+      <Navbar.Collapse className="pt-3 align-items-start justify-content-lg-end" id="responsive-navbar-nav">
+        <Dropdown
+          title="Services"
+          className={styles.nav_link}>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/services">Services</NavDropdown.Item>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/personal">Personal</NavDropdown.Item>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/corporate">Corporate</NavDropdown.Item>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/international">International</NavDropdown.Item>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/trainings-courses">Trainings and courses</NavDropdown.Item>
+        </Dropdown>
+        <Dropdown
+          title="About"
+          className={styles.nav_link}>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/about">About</NavDropdown.Item>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/team">Team</NavDropdown.Item>
+        </Dropdown>
+        <Link href="/#"><a className={`nav-link`} >Partners</a></Link>
+        <Link href="/#"><a className={`nav-link`} >Contact</a></Link>
+        <Nav className={styles.nav_btn}>
           <Link href="#">
             <a className="blue_btn">Get Protection</a>
           </Link>
-        </Nav.Link>
+        </Nav>
       </Navbar.Collapse>
     </Navbar>
-  )
+  );
 }

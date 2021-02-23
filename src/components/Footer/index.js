@@ -1,9 +1,23 @@
 import Link from 'next/link'
 import { Form, Button } from 'react-bootstrap'
 
+import FooterServices from './FooterServices';
+
 import styles from './Footer.module.css'
 
-export default function Footer() {
+export default function Footer({ footerStyle = false }) {
+  let FooterEl;
+
+  if (!footerStyle) {
+    FooterEl = <FooterDefault />
+  } else if (footerStyle === 'footer-service') {
+    FooterEl = <FooterServices />
+  }
+
+  return FooterEl;
+}
+
+const FooterDefault = () => {
   return (
     <footer className={styles.footer}>
       <span className={styles.go_up}>Go up</span>
@@ -28,5 +42,5 @@ export default function Footer() {
 
       <span className={styles.copyright}>COPYRIGHT @ 2021</span>
     </footer>
-  )
+  );
 }

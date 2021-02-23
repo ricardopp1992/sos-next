@@ -1,8 +1,6 @@
 .navbar {
-  /* position: relative;
-  z-index: 2; */
   padding: 15px 20px 10px;
-  background-color: #1B1B1B;
+  background-color: transparent;
 }
 
 .logo {
@@ -20,13 +18,13 @@
 }
 
 .nav_link {
-  margin: 0 9px;
+  margin: 0.3rem .5rem;
   font-size: 16px;
   line-height: 19px;
 }
-
 .nav_btn {
   padding: 0;
+  width: fit-content;
   margin: 15px 25px;
 }
 

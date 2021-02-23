@@ -1,5 +1,70 @@
-.partner-section {
-  .client-logo {
-    width: 80%;
+/*HOME CLIENT*/
+
+.partner-section{
+  text-align: center;
+}
+
+@include mobile-xs{
+  .partner-section {
+    .client-logo {
+      width: 60%; 
+    }
+  }
+}
+@include mobile-lg{
+  .partner-section {
+    .client-logo {
+      width: 45%; 
+    }
+  }
+}
+@include tablet{
+  .partner-section {
+    .client-logo {
+      width: 28%; 
+    }
+  }
+}
+
+@include desktops{
+  .partner-section {
+    .client-logo {
+      width: 60%; 
+    }
+  }
+}
+
+@include mobile-xs{
+  .text-section{
+    h3{ 
+      font-size: 13px;
+      text-align: end;
+    }
+  }
+}
+@include mobile-lg{
+  .text-section{
+    h3{ 
+      font-size: 18px;
+      text-align: end;
+    }
+  }
+}
+
+@include tablet{  
+  .text-section{
+    h3{ 
+      font-size: 22px;
+      text-align: end;
+    }
+  }
+}
+
+@include desktops{  
+  .text-section{
+    h3{ 
+      font-size: 25px;
+      text-align: end;
+    }
   }
 }

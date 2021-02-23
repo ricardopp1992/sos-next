@@ -4,7 +4,7 @@ import Head from 'next/head';
 import Footer from '../Footer';
 import Navbar from '../Navbar/index';
 
-const Layout = ({ title, children }) => {
+const Layout = ({ title, mainClassName = "", children, footerStyle = false }) => {
   return (
     <>
       <Head>
@@ -14,12 +14,12 @@ const Layout = ({ title, children }) => {
         <link rel="preload" href="/font/Aeonik-Bold.otf" as="font" crossOrigin="" />
       </Head>
       <Navbar />
-      <main>
+      <main className={mainClassName}>
         {
           children
         }
       </main>
-      <Footer />
+      <Footer footerStyle={footerStyle} />
     </>
   );
 }
