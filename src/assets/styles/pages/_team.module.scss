@@ -1,90 +1,231 @@
+@import '../variables.scss';
+@import '../controls/theme-media-query.scss';
+
 /* Content 1 */
 
 .content_text {
   align-content: center;
   padding-top: 10rem;
   padding-bottom: 5rem;
-  padding-left: 7rem;
-  padding-right: 5rem;
-}
 
-.content_img1 {
-  padding-left: 5rem;
-  padding-right: 5rem;
-
-  .img1 {
-    width: 100%;
-    padding-left: 2rem;
-    margin-left: 1rem;
+  @include mobile-xs {
+    padding-top: 3rem;
+    padding: 1rem;
   }
 
-  .content_img2 {
-    margin-left: -3rem;
+  @include mobile {
+    padding-top: 5rem;
+  }
 
+  h1 {
+
+    @include mobile-xs {
+      padding-bottom: 2rem;
+    }
+
+    @include mobile {
+      padding-bottom: 2rem;
+    }
+  }
+
+  h4 {
+
+    @include mobile-xs {
+      padding-top: 2rem;
+    }
+
+    @include mobile {
+      padding-top: 2rem;
+    }
   }
 }
 
 /* Team Member */
 
 .principal_content {
-  padding-left: 8rem;
-  padding-right: 6rem;
   padding-top: 5rem;
   padding-bottom: 3rem;
+
+  @include mobile-xs {
+    padding-top: 2rem;
+    padding: 1rem;
+  }
+
+  h2{
+
+    @include mobile {
+      padding-right: 3rem;
+    }
+  }
 
   .special_color {
     color: #4aa8ff;
   }
+
+  p{
+
+    @include mobile-xs {
+      padding-bottom: 2rem;
+    }
+  }
 }
 
 /*Leadership */
-
 .background_leadership {
-  background-image: url('/img/team/leadership-pattern.svg');
-}
+  background: url('/img/team/leadership-pattern.svg') no-repeat;
+  background-position: 0rem -10rem;
+  background-size: 100%;
+  padding-top: 9rem;
 
-.leadership_content {
-  padding-left: 8rem;
-  padding-right: 5rem;
-  padding-top: 2rem;
-
-  .title_color {
-    color: #4aa8ff;
-    padding-bottom: 2rem;
+  @include mobile-xs {
+    padding-top: 2rem;
+    background-size: 390%;
+    padding: 1rem;
   }
 
-  .leadership_text {
-    padding-right: 2rem;
-   }
+  @include mobile {
+    padding-top: 2rem;
+    background-size: 280%;
+  }
 
-  .leadership_list {
-    list-style: none;
-    padding-bottom: 5rem;
+  @include mobile-lg {
+    padding-top: 2rem;
+    background-size: 210%;
+  }
+
+  @include tablet {
+    padding-top: 5rem;
+    background-size: 144%;
+  }
+
+  .leadership_content {
+    padding: 2rem 0rem;
+
+    > div:nth-child(1) {
+      order: 2;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    > div:nth-child(2) {
+      order: 1;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    > div:nth-child(3) {
+      order: 4;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    > div:nth-child(4) {
+      order: 3;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    > div:nth-child(5) {
+      order: 5;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    .title_color {
+      color: #4aa8ff;
+      padding-bottom: 2rem;
+
+      @include mobile-xs {
+        padding-top: 1rem;
+      }
+    }
+
+    .leadership_text {
+      padding-right: 2rem;
+
+      @include mobile-xs {
+        padding-right: 0rem;
+      }
+    }
+
+    .leadership_list {
+      list-style: none;
+      padding-bottom: 5rem;
+
+      @include mobile-xs {
+        padding-bottom: 2rem;
+      }
+
+
+      @include mobile {
+        padding-bottom: 2rem;
+      }
+
+      @include tablet {
+        padding-bottom: 5rem;
+      }
+    }
   }
 }
+
 
 /* Join the team */
-
 .Join_content {
   background-color: #4aa8ff;
-  height: 38rem;
-  padding-left: 6rem;
-  padding-right: 5rem;
   padding-top: 5rem;
+  position: relative;
 
-  .join_text{
+  @include mobile-xs {
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
+
+  .join_text {
     width: 78%;
     padding-bottom: 2rem;
+
+    @include mobile-xs {
+      width: 100%;
+      padding-bottom: 0rem;
+    }
   }
 
   .security_btn {
-  padding: 11px 16px;
-  font-size: 22px;
-  font-weight: bold;
-  line-height: 19px;
-  background-color: black;
-  transition: 0.3s;
+    padding: 11px 16px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 19px;
+    background-color: black;
+    transition: 0.3s;
+  }
+
+  img {
+    z-index: 5;
+    position: relative;
+  }
+
+  .join_content_bottom {
+    background-color: $sosBlack;
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    @include mobile-xs {
+      
+    }
   }
 }
-
-

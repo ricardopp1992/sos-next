@@ -5,20 +5,20 @@ import styles from '../../assets/styles/pages/_team.module.scss'
 
 const TeamMember = () => {
   return (
-    <Container fluid >
+    <Container>
       <Row className={styles.principal_content}>
-        <h2 className="w-100 pb-5 pl-2">Our team member <span className={styles.special_color}>requiremts</span> :</h2>
-        <Col lg={3} >
+        <h2 className=" w-100 pb-5  pl-2">Our team member <span className={styles.special_color}>requiremts</span> :</h2>
+        <Col sm={12} lg={3} >
           <p>Pass a physical fitness test
             (State of Illinois P.O.W.E.R test
             guidelines)</p>
         </Col>
-        <Col lg={3}>
+        <Col sm={12} lg={3}>
           <p>Licensed through the Illinois
             Department of Financial and
             Professional Regulation</p>
         </Col>
-        <Col lg={6}>
+        <Col sm={12} lg={6}>
           <p >Score a minimum of 95% on both the written and shooting aspects
             of the State of Illinois approved training course for shotgun, rifle,
             revolver and semi automatic authorized weaponry.</p>
