@@ -39,6 +39,10 @@
 
 /*Leadership */
 
+.background_leadership {
+  background-image: url('/img/team/leadership-pattern.svg');
+}
+
 .leadership_content {
   padding-left: 8rem;
   padding-right: 5rem;
@@ -61,10 +65,26 @@
 
 /* Join the team */
 
-.Join_content{
+.Join_content {
   background-color: #4aa8ff;
-  height: 25rem;
-  padding-left: 8rem;
+  height: 38rem;
+  padding-left: 6rem;
   padding-right: 5rem;
   padding-top: 5rem;
+
+  .join_text{
+    width: 78%;
+    padding-bottom: 2rem;
+  }
+
+  .security_btn {
+  padding: 11px 16px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 19px;
+  background-color: black;
+  transition: 0.3s;
+  }
 }
+
+
