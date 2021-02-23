@@ -1,12 +1,32 @@
 @import '../variables.scss';
 @import '../controls/theme-media-query.scss';
 
+/*Text after Hero*/
+
+.hero_content{
+
+  @include mobile-xs {
+      padding: 1.5rem;
+  }
+}
+
+
+/*personal service content*/
+
 .personal_service_content {
   background-color: $sosGray;
   padding-bottom: 2rem;
 
+  @include mobile-xs {
+    padding: 1rem;
+  }
+
   h2 {
     padding-top: 5rem;
+
+    @include mobile-xs {
+      padding-top: 2rem;
+    }
   }
 
   .personal_content {
@@ -88,6 +108,10 @@
     background-color: $sosGray;
     height: 7rem;
     width: 100%;
+
+    @include mobile-xs {
+      height: 3rem;
+    }
   }
 
   .text_and_patter {
@@ -100,12 +124,30 @@
       z-index: 5;
       text-align: center;
       transform: translate(-50%, 0);
+
+      @include mobile-xs {
+        top: 8%;
+        font-size: 1.2rem;
+      }
+
+
+      @include tablet {
+        top: 16%;
+        font-size: 1.2rem;
+      }
     }
   
     .quote_patter {
       position: absolute;
       top: 0rem;
       z-index: 3;
+
+      @include mobile-xs {
+        top: -4rem;
+        object-fit: cover;
+        width: 100%;
+        height: 20rem;
+      }
     }
   }
 
@@ -113,15 +155,24 @@
   .cta_content {
     background-color: $sosLightGray;
     width: 100%;
-    padding: 15rem 0;
+    //padding-top: 20rem;
     color: $sosBlack;
+
+    @include mobile-xs {
+      padding: 1rem;
+      padding-top: 15rem;
+      padding-bottom: 5rem;
+    }
+
+    .btn_contact {
+
+      @include mobile-xs {
+        justify-content: center;
+      }
+    }
 
     a {
       color: #fff;
-
-      @include desktops {
-        margin-top: 5rem;
-      }
     }
   }
 }

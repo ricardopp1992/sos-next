@@ -1,4 +1,5 @@
 @import '../variables.scss';
+@import '../controls/theme-media-query.scss';
 
 /* Content 1 */
 
@@ -6,18 +7,36 @@
   align-content: center;
   padding-top: 10rem;
   padding-bottom: 5rem;
-}
 
-.content_img1 {
-  .img1 {
-    width: 100%;
-    padding-left: 2rem;
-    margin-left: 1rem;
+  @include mobile-xs {
+    padding-top: 3rem;
+    padding: 1rem;
   }
 
-  .content_img2 {
-    margin-left: -3rem;
+  @include mobile {
+    padding-top: 5rem;
+  }
 
+  h1 {
+
+    @include mobile-xs {
+      padding-bottom: 2rem;
+    }
+
+    @include mobile {
+      padding-bottom: 2rem;
+    }
+  }
+
+  h4 {
+
+    @include mobile-xs {
+      padding-top: 2rem;
+    }
+
+    @include mobile {
+      padding-top: 2rem;
+    }
   }
 }
 
@@ -27,8 +46,27 @@
   padding-top: 5rem;
   padding-bottom: 3rem;
 
+  @include mobile-xs {
+    padding-top: 2rem;
+    padding: 1rem;
+  }
+
+  h2{
+
+    @include mobile {
+      padding-right: 3rem;
+    }
+  }
+
   .special_color {
     color: #4aa8ff;
+  }
+
+  p{
+
+    @include mobile-xs {
+      padding-bottom: 2rem;
+    }
   }
 }
 
@@ -39,21 +77,103 @@
   background-size: 100%;
   padding-top: 9rem;
 
+  @include mobile-xs {
+    padding-top: 2rem;
+    background-size: 390%;
+    padding: 1rem;
+  }
+
+  @include mobile {
+    padding-top: 2rem;
+    background-size: 280%;
+  }
+
+  @include mobile-lg {
+    padding-top: 2rem;
+    background-size: 210%;
+  }
+
+  @include tablet {
+    padding-top: 5rem;
+    background-size: 144%;
+  }
+
   .leadership_content {
     padding: 2rem 0rem;
+
+    > div:nth-child(1) {
+      order: 2;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    > div:nth-child(2) {
+      order: 1;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    > div:nth-child(3) {
+      order: 4;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    > div:nth-child(4) {
+      order: 3;
+
+      @include desktops {
+        order: unset;
+      }
+    }
+
+    > div:nth-child(5) {
+      order: 5;
+
+      @include desktops {
+        order: unset;
+      }
+    }
 
     .title_color {
       color: #4aa8ff;
       padding-bottom: 2rem;
+
+      @include mobile-xs {
+        padding-top: 1rem;
+      }
     }
 
     .leadership_text {
       padding-right: 2rem;
+
+      @include mobile-xs {
+        padding-right: 0rem;
+      }
     }
 
     .leadership_list {
       list-style: none;
       padding-bottom: 5rem;
+
+      @include mobile-xs {
+        padding-bottom: 2rem;
+      }
+
+
+      @include mobile {
+        padding-bottom: 2rem;
+      }
+
+      @include tablet {
+        padding-bottom: 5rem;
+      }
     }
   }
 }
@@ -65,9 +185,20 @@
   padding-top: 5rem;
   position: relative;
 
+  @include mobile-xs {
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+  }
+
   .join_text {
     width: 78%;
     padding-bottom: 2rem;
+
+    @include mobile-xs {
+      width: 100%;
+      padding-bottom: 0rem;
+    }
   }
 
   .security_btn {
@@ -92,5 +223,9 @@
     bottom: 0;
     left: 0;
     z-index: 1;
+
+    @include mobile-xs {
+      
+    }
   }
 }

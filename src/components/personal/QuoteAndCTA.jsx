@@ -19,9 +19,9 @@ const QuoteAndCTA = () => {
           <Row>
             <Col lg={6}>
               <h2 className="mb-5">Don't get stuck with should</h2>
-              <p>Should is an ugly word. It means that there was a better choice. That you made a mistake and that the outcome could have been improved. Our clients never use the word "Should".</p>
+              <p className="mb-5">Should is an ugly word. It means that there was a better choice. That you made a mistake and that the outcome could have been improved. Our clients never use the word "Should".</p>
             </Col>
-            <Col lg={4} className="offset-lg-2 d-flex align-items-center">
+            <Col lg={4} className={`${styles.btn_contact} offset-lg-2 d-flex align-items-center`}>
               <a href="/#" className="blue_btn">You Should Contact Us</a>
             </Col>
           </Row>
