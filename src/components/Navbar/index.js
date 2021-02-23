@@ -6,7 +6,6 @@ import Dropdown from './Dropdown';
 
 import styles from './Navbar.module.scss';
 
-
 export default function Navmenu() {
   return (
     <Navbar className={styles.navbar} collapseOnSelect expand="lg" variant="dark" fixed="top">
