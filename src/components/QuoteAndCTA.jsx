@@ -1,16 +1,15 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 
-import styles from '../../assets/styles/pages/_personal.module.scss';
+import styles from '../assets/styles/pages/_personal.module.scss';
 
-const QuoteAndCTA = () => {
+const QuoteAndCTA = ({ quote = "", backgroundColor = false }) => {
   return (
     <div className={styles.quote_cta_section}>
-      <div className={styles.gray_block} />
+      <div className={styles.gray_block} style={{ backgroundColor }} />
       <div className={styles.text_and_patter}>
         <h2 className={styles.quote_text}>
-          “The best lightning rod for your protection is your own spine.”<br/>
-            ― Ralph Waldo Emerson
+          {quote}
         </h2>
         <img src="/img/team/team-pattern-bottom.svg" className={styles.quote_patter} atl="patter cta" />
       </div>
