@@ -10,7 +10,7 @@ const ValuesSection = () => {
         <Col sm={12} lg={6} xl={4} className="p-0 m-0 d-flex align-items-center">
           <img className="w-100" src="/img/about/values-section.png" />
         </Col>
-        <Col lg={6} xl={8} className={styles.values_content}>
+        <Col  lg={6} xl={8} className={styles.values_content}>
           <h1 className={`${styles.text_color} w-100 pt-5 pb-3`}>Values</h1>
           <Row>
             <Values
@@ -41,9 +41,9 @@ const ValuesSection = () => {
 
 const Values = ({ title, text }) => {
   return (
-    <Col sm={12} lg={12} xl={6} className="text-justify pt-5">
-      <h3 className="pb-3">{title}</h3>
-      <p>{text}</p>
+    <Col sm={12} lg={12} xl={6} className="text-justify pb-sm-1 pt-5">
+      <h3 className="  pb-md-1 pb-3">{title}</h3>
+      <p className="pb-sm-1 pb-md-1 pb-4">{text}</p>
     </Col>
   );
 };

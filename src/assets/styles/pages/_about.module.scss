@@ -47,27 +47,32 @@
     top: 25%;
     left: 0;
     max-width: 100%;
-    height: 38rem;
+    height: 45rem;
 
     @include mobile {
-      top: 20%;
+      top: 19%;
+      height: 40rem;
     }
 
     @include mobile-lg {
-      top: 8%;
+      top: 15%;
+      height: 38rem;
+    }
+
+    @include tablet {
+      top: 19%;
+      height: 38rem;
     }
 
     @include desktops {
       object-fit: unset;
       width: 100%;
       top: 30%;
+      height: 38rem;
     }
   }
 
   .our_approach {
-    padding: 0 1rem;
-    margin-top: 1rem;
-    text-align: justify;
 
     @include desktops {
       margin-top: 0;
@@ -76,9 +81,8 @@
     .big_content2 {
       display: flex;
       align-items: center;
-  
+
       @include desktops {
-        padding-top: 4rem;
         padding-left: 5rem;
       }
   
@@ -86,9 +90,14 @@
         width: 100%;
         color: white;
         font-weight: bold;
+        
+
+        @include tablet {
+          padding-left: 1rem;
+        }
   
         @include desktops {
-          padding-top: 4rem;
+          padding-top: 6rem;
           padding-left: 5rem;
         }
       }
@@ -97,6 +106,7 @@
     .licence_number {
       font-weight: bold;
       padding-bottom: 1.5rem;
+      padding-top: 3rem;
   
       @include desktops {
         font-weight: normal;
@@ -110,7 +120,7 @@
     margin-top: 2rem;
 
     @include desktops {
-      padding-top: 8rem;
+      padding-top: 6rem;
     }
   }
 }
@@ -120,12 +130,16 @@
 
 .consult_content {
   background-color: #4d4d4d;
-  padding: 10rem 2rem 0;
-  
+  padding-top: 6rem;
+
+  @include tablet {
+    padding: 5rem ;
+    padding-top: 10rem;
+  }
+
   @include desktops {
+    padding: 5rem ;
     padding-top: 15rem;
-    padding-left: 5rem;
-    padding-right: 2rem;
   }
 
   .color_text {
@@ -134,17 +148,14 @@
   }
   
   .consult_detail {
-    text-align: justify;
     color: white;
+    text-align: justify;
   }
 
   .btn {
     text-align: center;
     padding: 3rem 0;
-    
-    @include desktops {
-      padding-top: 6rem;
-    }
+    padding-top: 6rem;
   }
 }
 
@@ -163,10 +174,10 @@
   }
 
   .values_content {
-    padding: 0 1rem;
+    padding: 0 3rem;
 
     @include desktops {
-      padding: 0 7rem 0 10rem;
+      padding: 0 5rem  0 5rem;
     }
   }
 }

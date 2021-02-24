@@ -33,12 +33,13 @@
   z-index: 5;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  padding-top: 5rem;
 
   @include desktops {
-    padding-top: 18rem;
-    height: 40rem;
+    padding-top: 28rem;
+    height: 39rem;
     flex-direction: row;
+    justify-content: space-between;
 
     h3 {
       text-align: left;
@@ -47,7 +48,7 @@
   }
 
   div {
-    padding-top: 2rem;
+    padding-top: 4rem;
     text-align: center;
 
   }

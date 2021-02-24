@@ -6,8 +6,8 @@ import styles from '../../assets/styles/pages/_about.module.scss';
 const ConsultationSection = () => {
   return (
     <Container fluid className={`${styles.consult_content}`}>
-      <Row className="justify-content-start pl-lg-5  pb-5 pb-lg-0 h-50">
-        <Col sm={12} lg={3} className="pl-lg-6">
+      <Row className="justify-content-start  pb-5 pb-lg-0 h-50">
+        <Col sm={12} lg={3} className="">
           <h4 className={styles.color_text}>Consultations</h4>
           <p className={styles.consult_detail}>
             Let our team of experts guide you towards the appropriate solution
@@ -15,7 +15,7 @@ const ConsultationSection = () => {
             and bring creative solutions to ensure success.
           </p>
         </Col>
-        <Col sm={12} lg={5} className="px-lg-5">
+        <Col sm={12} lg={6} className="px-lg-4">
           <h4 className={styles.color_text}>
             Not every situation calls for a show of force.
           </h4>

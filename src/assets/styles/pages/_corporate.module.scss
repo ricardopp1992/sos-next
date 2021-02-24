@@ -6,6 +6,10 @@
   p {
     margin-top: 1rem;
     font-weight: normal;
+
+    @include mobile-xs {
+      text-align: justify;
+    }
   }
 }
 
@@ -19,10 +23,18 @@
 
   .corporate_title {
     margin-bottom: 4rem;
+
+    @include mobile-xs {
+      padding-top: 2rem;
+      margin-bottom: 1rem;
+    }
   }
 
   .content_item {
-    margin: 2rem 0;
+
+    @include desktops {
+      margin: 2rem 0;
+    }
 
     h3 {
       font-size: 1.45rem;
@@ -31,7 +43,12 @@
 
     p {
       font-weight: normal;
-      padding-right: 2rem;
+     // padding-right: 2rem;
+
+      @include mobile-xs {
+        text-align: justify;
+        padding-bottom: 2rem;
+      }
     }
 
     a {
@@ -60,14 +77,22 @@
 
   .content_large_image {
     width: 100%;
+    object-fit: cover;
 
-    @include desktops {
+    @include mobile-xs {
+      width: 100%;
+      object-fit: cover;
+      height: 20rem;
     }
   }
 
   .content_title {
     color: $sosBlack;
-    margin-top: 5rem;
+    margin-top: 2rem;
+
+    @include desktops{
+      margin-top: 5rem;
+   }
   }
 
   .content_item {
@@ -88,7 +113,7 @@
       text-align: justify;
       
       @include desktops {
-        padding-right: 5rem;
+        padding-right: 2rem;
         text-align: left;
       }
     }

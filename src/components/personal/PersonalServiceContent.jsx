@@ -32,7 +32,7 @@ const PersonalServiceContent = () => {
             <h3>Protective and Security Services:</h3>
             <p>For some, maintaining a low profile is best, and others require a more visible presence. Whatever your need, the SOS team’s sole mission is to ensure your protection at all costs. </p>
             <ul>{ list1.map((item, i) => <ListArrow key={i} item={item} />)}</ul>
-            <div>
+            <div className={styles.cta}>
               <a href="/#" className="blue_btn">Contact Us</a><span>To share your special operation</span>
             </div>
           </ImageAndChildContent>
