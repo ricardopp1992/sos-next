@@ -1,0 +1,96 @@
+@import '../controls/theme-media-query.scss';
+@import '../variables.scss';
+
+/** AFTER HERO */
+.after_hero {
+  p {
+    margin-top: 1rem;
+    font-weight: normal;
+  }
+}
+
+/* CONTENT CORPORATE */
+.content_corporate1 {
+  background-color: $sosGray;
+  
+  @include desktops {
+    padding: 5rem 0;
+  }
+
+  .corporate_title {
+    margin-bottom: 4rem;
+  }
+
+  .content_item {
+    margin: 2rem 0;
+
+    h3 {
+      font-size: 1.45rem;
+      margin: 1.5rem 0;
+    }
+
+    p {
+      font-weight: normal;
+      padding-right: 2rem;
+    }
+
+    a {
+      color: $sosBlue;
+      margin-top: 2rem;
+      margin-right: 2rem;
+      float: right;
+      text-decoration: underline;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+
+    li {
+      margin: 1rem 0;
+    }
+  }
+}
+
+/* CONTENT CORPORATE 2 */
+.content_corporate2 {
+  background-color: $sosMediumGray;
+  
+  @include desktops {
+    padding-bottom: 5rem;
+  }
+
+  .content_large_image {
+    width: 100%;
+
+    @include desktops {
+    }
+  }
+
+  .content_title {
+    color: $sosBlack;
+    margin-top: 5rem;
+  }
+
+  .content_item {
+    color: $sosBlack;
+    margin: 1rem 0;
+
+    @include desktops {
+      margin: 2rem 0;
+    }
+
+    h3 {
+      font-size: 1.45rem;
+      margin: 1.5rem 0;
+    }
+
+    p {
+      font-weight: normal;
+      text-align: justify;
+      
+      @include desktops {
+        padding-right: 5rem;
+        text-align: left;
+      }
+    }
+  }
+}
