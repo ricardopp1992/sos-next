@@ -1,0 +1,48 @@
+.content_text {
+  padding-top: 10rem;
+  padding-left: 20.5rem;
+  text-align: left;
+
+  .title{
+    color: black;
+    padding-bottom: 2rem;
+    font-weight: unset;
+
+    .bold_text{
+      font-weight: bold;
+    }
+  }
+}
+
+.input_content{
+  padding: 0 15rem 5rem 15rem;
+  text-align: center;
+
+
+  .input_style {
+    border: unset;
+    background-color: rgb(204, 204, 204);
+    height: 3rem;
+    width: 80%;
+    padding-left: 1rem;
+  }
+
+  
+  .input_email {
+    color: gray;
+    border: unset;
+    background-color: rgb(204, 204, 204);
+    height: 10rem;
+    width: 80%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .btn_submit{
+    color: white;
+    border: unset;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 6.5rem;
+  }
+}
