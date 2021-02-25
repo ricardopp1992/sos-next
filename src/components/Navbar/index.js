@@ -21,7 +21,7 @@ export default function Navmenu() {
           <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/personal-service">Personal</NavDropdown.Item>
           <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/corporate-service">Corporate</NavDropdown.Item>
           <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/international-service">International</NavDropdown.Item>
-          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/trainings-courses">Trainings and courses</NavDropdown.Item>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/training-and-courses">Training and courses</NavDropdown.Item>
         </Dropdown>
         <Dropdown
           title="About"
