@@ -1,0 +1,72 @@
+@import '../controls/theme-media-query.scss';
+@import '../variables.scss';
+
+/* COURSES LIST */
+.courses_list_section {
+  background-color: $sosLightGray;
+
+  @include desktops {
+    padding: 5rem 0;
+  }
+
+  .boxes_container {
+    padding: 0 15rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    // .course_box:nth-child(1) {
+    //   max-width: 10rem;
+    // }
+
+    .course_box {
+      background-color: #fff;
+      display: inline-block;
+      width: fit-content;
+      margin: .5rem;
+      padding: 1rem;
+      font-weight: bold;
+      color: $sosBlue;
+      border: 4px dashed $sosBlue;
+    }
+  }
+
+}
+
+/* CTA COURSES */
+.cta_courses_section {
+  background-color: #fff;
+  padding: 2rem 0;
+
+  @include desktops {
+    padding: 5rem 0;
+  }
+
+  .cta_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include desktops {
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0 20rem;
+    }
+
+    > * {
+      width: fit-content;
+    }
+
+    h3 {
+      color: #000;
+      width: 100%;
+      padding: 2rem;
+
+      @include desktops {
+        width: unset;
+      }
+    }
+  }
+  
+}
