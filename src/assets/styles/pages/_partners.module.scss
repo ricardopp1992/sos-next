@@ -1,0 +1,21 @@
+@import '../controls/theme-media-query.scss';
+@import '../variables.scss';
+
+/* PARTNERS CONTENT */
+.partners_content {
+  background-color: $sosLightGray;
+  padding: 2rem 0;
+  color: $sosBlack;
+
+  @include desktops {
+    padding: 5rem 0;
+  }
+
+  h4 {
+    margin-bottom: 4rem;
+  }
+
+  p {
+    font-weight: normal;
+  }
+}

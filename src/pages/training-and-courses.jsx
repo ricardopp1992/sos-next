@@ -4,6 +4,7 @@ import Layout from '../components/Layout/Layout';
 import HeroPattern from '../components/HeroPattern';
 import CoursesList from '../components/trainining-and-courses/CoursesList';
 import CTACourses from '../components/trainining-and-courses/CTACourses';
+import TrainingContent from '../components/trainining-and-courses/TrainingContent';
 
 const TrainingAndCourses = () => {
   return (
@@ -14,8 +15,8 @@ const TrainingAndCourses = () => {
         will prepare and arm you the right way. `}
       />
       <CoursesList />
-      <CTACourses />
-      
+      <CTACourses text="Contacts us to register for an upcoming course" />
+      <TrainingContent />
     </Layout>
   );
 }
