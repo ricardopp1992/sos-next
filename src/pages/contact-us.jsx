@@ -1,12 +1,11 @@
-
 import Layout from '../components/Layout/Layout'
-import Hero from '../components/HeroComponent';
 import Contact from '../components/Contact/Contact'
+import HeroPattern from '../components/HeroPattern';
 
 export default function ContactUs () {
   return (
     <Layout title="Contact Us">
-      <Hero title="About" image="/img/about/hero-about.png" />
+      <HeroPattern title="Contact Us" backgroundColor="#fff" />
       <Contact />
     </Layout>
   );
