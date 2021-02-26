@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../../assets/styles/pages/_training.module.scss';
 
 const coursesList = [
-  `Conceal`,
+  
   'Handcuff',
   'Baton',
   'Active Shooter',
@@ -21,6 +21,14 @@ const CoursesList = () => {
     <div className={styles.courses_list_section}>
       <Container>
         <Row>
+        <Col sm={12} lg={12} className={styles.boxes_container1}>
+        <div className={styles.course_box1}>
+            <p >Conceal Carry</p>
+            <p className={styles.text}>illinois</p>
+            <p className={styles.text}>utah</p>
+            <p className={styles.text}>Re-certificacions</p>
+            </div>
+            </Col>
           <Col sm={12} lg={12} className={styles.boxes_container}>
             {
               coursesList.map((course, i) => (
