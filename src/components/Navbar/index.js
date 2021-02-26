@@ -21,7 +21,7 @@ export default function Navmenu() {
           <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/personal-service">Personal</NavDropdown.Item>
           <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/corporate-service">Corporate</NavDropdown.Item>
           <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/international-service">International</NavDropdown.Item>
-          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/trainings-courses">Trainings and courses</NavDropdown.Item>
+          <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/training-and-courses">Training and courses</NavDropdown.Item>
         </Dropdown>
         <Dropdown
           title="About"
@@ -30,7 +30,7 @@ export default function Navmenu() {
           <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/team">Team</NavDropdown.Item>
         </Dropdown>
         <Link href="/#"><a className={`nav-link`} >Partners</a></Link>
-        <Link href="/#"><a className={`nav-link`} >Contact</a></Link>
+        <Link href="/contact-us"><a className={`nav-link`} >Contact</a></Link>
         <Nav className={styles.nav_btn}>
           <Link href="#">
             <a className="blue_btn">Get Protection</a>

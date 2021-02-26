@@ -22,7 +22,7 @@ const ApproachSection = () => {
 
       <img className={styles.pattern} src="/img/about/approach.png" />
       <Row className={`w-100 justify-content-start ${styles.our_approach}`}>
-        <Col sm={12} lg={4} className={`${styles.big_content2} order-2 order-lg-1`} >
+        <Col sm={12} lg={4} className={`${styles.big_content2} pt-md-0 pl-md-0 order-2 order-lg-1`} >
           <h2 className={styles.content1} >Our Approach</h2>
         </Col>
         <Col sm={12} lg={4} className="order-3 order-lg-2">
@@ -34,7 +34,7 @@ const ApproachSection = () => {
             assets{" "}
           </p>
         </Col>
-        <Col sm={12} lg={4} className="order-1 order-lg-3">
+        <Col sm={12} lg={4} className="order-1 order-lg-3 pt-md-5">
           <h5 className={`${styles.text1} ${styles.licence_number}`}>Licence Number: 122.001374</h5>
         </Col>
       </Row>

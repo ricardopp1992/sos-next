@@ -1,0 +1,83 @@
+@import '../controls/theme-media-query.scss';
+
+.content_text {
+
+    padding-top: 2rem;
+    text-align: left;
+
+
+  .title{
+    color: black;
+    padding-bottom: 2rem;
+    font-weight: unset;
+    padding-left: 0.5rem;
+
+    @include desktops-only {
+      padding-left: 5.5rem;
+    }
+
+    @include desktops {
+        padding-left: 6.5rem;
+    }
+
+    @include large-desktops {
+      padding-left: 8rem;
+    }
+
+    .bold_text{
+      font-weight: bold;
+    }
+  }
+}
+
+.input_content{
+
+  display: contents;
+
+  @include desktops {
+    padding: 0 15rem 5rem 15rem;
+    text-align: center;
+  }
+
+  .input_style {
+    border: unset;
+    background-color: rgb(204, 204, 204);
+    height: 3rem;
+    width: 100%;
+    padding-left: 1rem;
+
+    @include desktops {
+      width: 80%;
+    }
+  }
+
+  
+  .input_email {
+    color: gray;
+    border: unset;
+    background-color: rgb(204, 204, 204);
+    height: 10rem;
+    width: 100%;
+    padding-top: 1rem;
+    padding-left: 1rem;
+
+    @include desktops {
+      width: 80%;
+    }
+  }
+
+  .btn{
+    text-align: center;
+    padding-bottom: 2rem;
+
+    @include desktops {
+      padding-left: 8.2rem;
+    }
+  }
+
+  .btn_submit{
+    color: white;
+    border: unset;
+    text-align: center;
+  }
+}

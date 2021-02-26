@@ -15,7 +15,7 @@ const practiveServices = [
 const ContentCorporate = () => {
   return (
     <div className={styles.content_corporate1}>
-      <Container>
+      <Container >
         <h2 className={styles.corporate_title}>Corporate Operations</h2>
         <Row>
           <ParagraphItem>

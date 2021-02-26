@@ -1,7 +1,8 @@
 import React from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
 import styles from '../../assets/styles/pages/_personal.module.scss';
+import ImageAndChildContent from '../ImageAndChildContent';
 import ListArrow from '../utils/ListArrow';
 
 const list1 = [
@@ -27,37 +28,22 @@ const PersonalServiceContent = () => {
       <Container>
         <h2>Personal Protection Services:</h2>
         <Row>
-          <ImageAndList right image="/img/personal-service/protactive-service.png">
+          <ImageAndChildContent right image="/img/personal-service/protactive-service.png">
             <h3>Protective and Security Services:</h3>
             <p>For some, maintaining a low profile is best, and others require a more visible presence. Whatever your need, the SOS team’s sole mission is to ensure your protection at all costs. </p>
             <ul>{ list1.map((item, i) => <ListArrow key={i} item={item} />)}</ul>
-            <div>
+            <div className={styles.cta}>
               <a href="/#" className="blue_btn">Contact Us</a><span>To share your special operation</span>
             </div>
-          </ImageAndList>
-          <ImageAndList image="/img/personal-service/training-service.png">
+          </ImageAndChildContent>
+          <ImageAndChildContent image="/img/personal-service/training-service.png">
             <h3>Training and Courses</h3>
             <p>Learn from the best at our state-of-the-art trainings and courses. Our expert shooters train for weapon usage and prepare you for what-if situations.</p>
             <ul>{ list2.map((item, i) => <ListArrow key={i} item={item} />)}</ul>
             <div><a href="/#" className="blue_btn">Read More</a></div>
-          </ImageAndList>
+          </ImageAndChildContent>
         </Row>
       </Container>
-    </div>
-  );
-};
-
-const ImageAndList = ({ right, image, children }) => {
-  return (
-    <div className={styles.personal_content}>
-      <Col lg={6} className={`${right ? styles.image_right : ''} ${styles.image} d-none d-lg-flex`}>
-        <img src={image} alt="" />
-      </Col>
-      <Col sm={12} lg={6} className={`${right ? styles.content_left : ''} ${styles.content_children}`}>
-        {
-          children
-        }
-      </Col>
     </div>
   );
 };

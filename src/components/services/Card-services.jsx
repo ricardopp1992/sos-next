@@ -170,7 +170,7 @@ const ServicesImgRight = ({
 const ServiceWhitoutListR = ({ img, title, paragraph }) => {
   return (
     <Container fluid>
-      <Row className={`${styles.protect_section} ${styles.service_background} px-0 p-lg-5`}>
+      <Row className={`${styles.service_background} px-0 p-lg-5`}>
         <Col sm={12} lg={6}>
           <img
             className={`${styles.protect_img} rounded-xl`}
@@ -195,9 +195,9 @@ const ServiceWhitoutListL = ({ img, title, paragraph, anchor }) => {
       <Row className={`${styles.service_background} px-0 p-lg-5`}>
         <Col
           sm={12} lg={6}
-          className={`${styles.protect_section} d-flex align-items-center justify-content-start`}>
+          className="pb-4 d-flex align-items-center justify-content-start">
           <div className={styles.protect_content}>
-            <h3 className="subtitle text-dark">{title}</h3>
+            <h3 className="pb-1 subtitle text-dark">{title}</h3>
             <p className="text-dark">{paragraph}</p>
             <Link href="/#"><a className="text-dark fs-6">{anchor}</a></Link>
           </div>

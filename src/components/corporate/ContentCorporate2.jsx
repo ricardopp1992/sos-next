@@ -6,7 +6,7 @@ import styles from '../../assets/styles/pages/_corporate.module.scss';
 const ContentCorporate2 = () => {
   return (
     <div className={styles.content_corporate2}>
-      <img src="/img/corporate/corporate-middle.png" className={styles.content_large_image} />
+      <img  src="/img/corporate/corporate-middle.png" className={styles.content_large_image} />
       <Container>
         <h2 className={styles.content_title}>Industries</h2>
         <Row>

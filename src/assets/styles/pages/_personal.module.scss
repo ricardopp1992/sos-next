@@ -18,84 +18,24 @@
   background-color: $sosGray;
   padding-bottom: 2rem;
 
-  @include mobile-xs {
-    padding: 1rem;
-  }
-
   h2 {
     padding-top: 5rem;
 
     @include mobile-xs {
       padding-top: 2rem;
+      padding-left: 1rem;
     }
   }
 
-  .personal_content {
-    display: flex;
+  .cta {
+    display: contents;
 
     @include desktops {
-      margin: 3rem 0;
+      display: inline;
     }
 
-    .image {
-      display: flex;
-      justify-content: center;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    .content_children {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      margin-top: 3rem;
-
-      @include desktops {
-        margin-top: 0;
-        margin-left: 2rem;
-      }
-
-      h3 {
-        font-size: 1.5rem;
-      }
-
-      p {
-        margin: 1rem 0;
-      }
-
-      
-      div {
-        margin-top: 1rem;
-
-        a {
-          width: max-content;
-        }
-
-        span {
-          font-weight: bold;
-          margin-left: .5rem;
-  
-          @include desktops {
-            margin-left: 2rem;
-          }
-        }
-      }
-
-    }
-
-    .image_right {
-      order: 2;
-    }
-
-    .content_left{
-      order: 1;
-      margin-left: 0;
-
-      @include desktops {
-        padding-right: 12rem;
-      }
+    span {
+      padding-top: 1rem;
     }
   }
 }
