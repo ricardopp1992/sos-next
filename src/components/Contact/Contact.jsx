@@ -5,7 +5,6 @@ import styles from '../../assets/styles/pages/_contact.module.scss';
 
 
 const Contact = () => {
- 
 
 
 
@@ -16,9 +15,9 @@ const Contact = () => {
         <Col sm={6} md={12} lg={12} >
           <h5 className={styles.title} >We are located in <span className={styles.bold_text}>Chicago!</span></h5>
         </Col>
-        </Row>
-        <Row className={styles.input_content}>
-        
+      </Row>
+      <Row className={styles.input_content}>
+        <form>
           <Col sm={12} md={12} lg={12} className="pt-2 pb-2">
             <label htmlFor="name" />
             <input className={styles.input_style} type="text" name="Name" placeholder="Name" required/>
@@ -40,7 +39,7 @@ const Contact = () => {
           <Col sm={12} md={12} lg={12} className={`${styles.btn} d-flex text-align-center pt-2`}>
             <button type="submit" className={`${styles.btn_submit} blue_btn_contact`}>Send</button>
           </Col>
-        
+          </form>
       </Row>
     </Container>
     </div>

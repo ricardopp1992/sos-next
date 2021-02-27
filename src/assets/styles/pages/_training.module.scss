@@ -13,28 +13,40 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-end;
 
     @include desktops {
-      padding: 0 15rem;
+      padding: 0 10rem;
     }
 
-    // .course_box:nth-child(1) {
-    //   max-width: 10rem;
-    // }
+    .course_box:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-height: unset;
+
+      .text {
+        font-weight: normal
+      };
+    }
 
     .course_box {
       background-color: #fff;
       display: inline-block;
       width: fit-content;
       margin: .5rem;
-      padding: 1rem;
+      padding: 1rem 2rem;
       font-weight: bold;
       color: $sosBlue;
       border: 4px dashed $sosBlue;
+
+      @include desktops {
+        display: block;
+      }
     }
   }
-
 }
+
 
 /* CTA COURSES */
 .cta_courses_section {
@@ -54,7 +66,7 @@
     @include desktops {
       flex-direction: row;
       justify-content: space-evenly;
-      padding: 0 20rem;
+      padding: 0 10rem;
     }
 
     > * {
@@ -84,7 +96,7 @@
   }
 
   h2 {
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   .training_content_item {
@@ -93,6 +105,7 @@
 
     h4 {
       font-weight: bold;
+      margin-top: 2rem;
       margin-bottom: 2rem;
     }
 
@@ -105,4 +118,6 @@
 
 .background_image {
   width: 100%;
+  object-fit: cover;
+  height: 20rem;
 }

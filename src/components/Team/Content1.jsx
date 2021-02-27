@@ -18,7 +18,7 @@ const Content1 = () => {
             and message you need to send for your security situation</p>
         </Col>
         <Col sm={12} lg={4} >
-          <h4 className="pt-sm-4 pt-md-4"> Licence Number: 122.001374 </h4>
+          <h4 className="py-4 pt-md-4"> Licence Number: 122.001374 </h4>
         </Col>
       </Row>
       <Row className="pr-xs-0 pr-md-2 pr-lg-5" >
@@ -30,8 +30,8 @@ const Content1 = () => {
             <img className="w-100" src="/img/team/img2.png" />
           </div>
           <div className={styles.small_img}>
-            <img className="w-50" src="/img/team/img3.png" />
-            <img className="w-50" src="/img/team/img4.png" />
+            <img src="/img/team/img3.png" />
+            <img src="/img/team/img4.png" />
           </div>
         </Col>
       </Row>
