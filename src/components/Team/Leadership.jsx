@@ -7,9 +7,9 @@ const Leadership = () => {
   return (
     <div className={styles.background_leadership}>
       <Container>
-        <h1 className="w-100 pb-sm-2 pb-5 pl-2 my-lg-5" >Leadership</h1>
+        <h1 className="w-100" >Leadership</h1>
         <Row className={styles.leadership_content}>
-          <Col lg={4} >
+          <Col sm={12} lg={4} >
             <h2 className={styles.title_color}>Robert J. Orseske, Jr.</h2>
             <p className={styles.leadership_text}>Robert brings a professional decorum providing
             security operations in protecting your assets and
@@ -25,10 +25,10 @@ const Leadership = () => {
             firearm, baton, handcuff, and scenario based
               training exercises. </p>
           </Col>
-          <Col lg={4} className="d-flex justify-content-center">
+          <Col sm={12} lg={4} className="d-flex justify-content-center">
             <img className="w-100 pb-sm-2" src="/img/team/leadership.png" />
           </Col>
-          <Col lg={4}>
+          <Col sm={12} lg={4}>
             <h2 className={styles.title_color}>Geno W. Frenzel, Jr.</h2>
             <p>Our company has combined over 25 years of
             extensive training and expertise that allows us to
@@ -71,7 +71,7 @@ const awards = [
 
 const LeadershipList = ({ title, list, arrow, children, className = "" }) => {
   return (
-    <Col lg={4} className={`d-block ${className}`}>
+    <Col sm={12} lg={4} className={`d-block ${className}`}>
       <h1 className="w-100 pb-sm-4  pt-md-5 pb-5 pt-5">{title}</h1>
       <ul className={styles.leadership_list}>
         {list &&

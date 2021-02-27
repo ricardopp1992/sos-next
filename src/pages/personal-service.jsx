@@ -14,7 +14,7 @@ const PersonalService = () => {
         image="/img/personal-service/personal-service-hero.png" />
       <AfterHeroService />
       <PersonalServiceContent />
-      <QuoteAndCTA quote="“The best lightning rod for your protection is your own spine.”<br/> ― Ralph Waldo Emerson" />
+      <QuoteAndCTA quote={<>“The best lightning rod for your protection is your own spine.”<br/> ― Ralph Waldo Emerson</>} />
     </Layout>
   );
 }

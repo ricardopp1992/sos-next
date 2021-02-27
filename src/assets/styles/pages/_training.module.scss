@@ -13,57 +13,36 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    align-items: flex-end;
 
     @include desktops {
-      padding: 0 15rem;
+      padding: 0 10rem;
     }
 
-    // .course_box:nth-child(1) {
-    //   max-width: 10rem;
-    // }
+    .course_box:nth-child(1) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-height: unset;
+
+      .text {
+        font-weight: normal
+      };
+    }
 
     .course_box {
       background-color: #fff;
       display: inline-block;
       width: fit-content;
       margin: .5rem;
-      padding: 1rem;
+      padding: 1rem 2rem;
       font-weight: bold;
       color: $sosBlue;
       border: 4px dashed $sosBlue;
-    }
-  }
 
-  .boxes_container1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 8rem;
-
-    @include desktops {
-      display: block;
-      padding: 0 8rem;
-    }
-
-  .course_box1 {
-    position:absolute;
-    bottom: 0rem;
-    background-color: #fff;
-    display: inline-block;
-    width: fit-content;
-    margin: 0.5rem;
-    padding: 1rem 2rem 1rem 2rem;
-    
-    font-weight: bold;
-    color: $sosBlue;
-    border: 4px dashed $sosBlue;
-
-    @include desktops{
-      bottom: -5rem;
-    }
-  }
-    .text{
-      font-size: smaller;
+      @include desktops {
+        display: block;
+      }
     }
   }
 }
