@@ -1,14 +1,24 @@
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 import Logo from '../Logo/Logo';
 import Dropdown from './Dropdown';
+import useScroll from '../../hooks/useScroll';
 
 import styles from './Navbar.module.scss';
 
 export default function Navmenu() {
+  const [menuScrollStyle, setMenuScrollStyle] = useState();
+  const isUp = useScroll(400);
+
+  useEffect(() => {
+    if (isUp) setMenuScrollStyle(styles.top);
+    if (!isUp) setMenuScrollStyle(styles.down);
+  }, [isUp]);
+
   return (
-    <Navbar className={styles.navbar} collapseOnSelect expand="lg" variant="dark" fixed="top">
+    <Navbar className={`${styles.navbar} ${menuScrollStyle}`} collapseOnSelect expand="lg" variant="dark" fixed="top">
       <Navbar.Brand href="/">
         <Logo />
       </Navbar.Brand>
