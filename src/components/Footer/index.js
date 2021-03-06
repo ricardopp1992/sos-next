@@ -5,11 +5,11 @@ import FooterServices from './FooterServices';
 
 import styles from './Footer.module.css'
 
-export default function Footer({ footerStyle = false }) {
+export default function Footer({ footerStyle = false, activeGoUp }) {
   let FooterEl;
 
   if (!footerStyle) {
-    FooterEl = <FooterDefault />
+    FooterEl = <FooterDefault activeGoUp={activeGoUp} />
   } else if (footerStyle === 'footer-service') {
     FooterEl = <FooterServices />
   }
@@ -17,10 +17,10 @@ export default function Footer({ footerStyle = false }) {
   return FooterEl;
 }
 
-const FooterDefault = () => {
+const FooterDefault = ({ activeGoUp }) => {
   return (
     <footer className={styles.footer}>
-      <span className={styles.go_up}>Go up</span>
+      { activeGoUp && <span className={styles.go_up}>Go up</span>}
 
       <div className={styles.footer_main}>
         <div className={`my-2 ${styles.footer_mapsite}`}>

@@ -47,7 +47,7 @@
 
 .email_box {
   display: inline-block;
-  width: 190px;
+  width: 70%;
   border: 2px solid #4AA8FF;
   border-radius: 0;
   background-color: transparent;
@@ -57,6 +57,7 @@
   display: inline-block;
   border: none;
   border-radius: 0;
+  width: 30%;
   background-color: #4AA8FF;
 }
 

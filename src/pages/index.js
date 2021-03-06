@@ -9,7 +9,7 @@ import styles from '../assets/styles/index.module.css';
 
 export default function Home() {
   return (
-    <Layout title="Home">
+    <Layout title="Home" activeGoUp>
       {/* <img src="/testback-1.png" alt="" style={{ position: "absolute", "zIndex": "99", top: "0", width: "100%", opacity: "0.5" }} /> */}
       <Hero />
       <HomeClients />

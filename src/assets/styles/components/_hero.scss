@@ -3,21 +3,42 @@
 
   .hero_content {
     position: absolute;
-    top: 7rem;
+    width: 90%;
+    top: 5rem;
     left: 50%;
     transform: translate(-50%, 0);
     z-index: 60;
 
     @include mobile-lg {
+      top: 8rem;
+    }
+
+    @include tablet {
       top: 5rem;
     }
 
     @include desktops {
-      top: 8rem;
+      top: 5rem;
+      width: 60%;
     }
 
     @include large-desktops-mid {
       top: 27%;
+    }
+
+    h3 {
+      font-size: .8rem;
+      margin-top: -.7rem;
+      text-align: center;
+
+      @include mobile-lg {
+        font-size: 1rem;
+      }
+
+      @include desktops {
+        font-size: 1.5rem;
+
+      }
     }
   }
 

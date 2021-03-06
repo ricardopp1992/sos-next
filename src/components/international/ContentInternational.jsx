@@ -45,9 +45,9 @@ const ContentInternational = () => {
             <h3>Security Services :</h3>
             <ul className={styles.list}>
               {
-                securityList.map(item => {
+                securityList.map((item, i) => {
                   if (typeof item === 'object') {
-                    return (<ul>{ item.map( insideList => <ListArrow key={insideList} item={insideList} /> ) }</ul>)
+                    return (<ul key={i}>{ item.map( insideList => <ListArrow key={insideList} item={insideList} /> ) }</ul>)
                   }
                   return <ListArrow key={item} item={item} />
                 })

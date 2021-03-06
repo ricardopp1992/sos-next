@@ -31,7 +31,7 @@ const FooterServices = () => {
         </div>
         <div style={{ zIndex: '5' }}>
           <div className={stylesF.footer_main}>
-            <div className="my-2">
+            <div className={`my-2 ${stylesF.footer_mapsite}`}>
               <Link href="/">
                 <a className={stylesF.footer_link}>Home</a>
               </Link>
