@@ -17,6 +17,10 @@
     padding-top: 5rem;
   }
 
+  @include desktops {
+    padding-bottom: 4rem;
+  }
+
   h1 {
 
     @include mobile-xs {
@@ -234,12 +238,16 @@
     margin: 2rem 0 5rem 0;
 
     .security_btn {
-      padding: 11px 16px;
+      padding: 11px 6px;
       font-size: 22px;
       font-weight: bold;
       line-height: 19px;
       background-color: black;
       transition: 0.3s;
+
+      @include desktops {
+        padding: 11px 16px;
+      }
     }
   }
 

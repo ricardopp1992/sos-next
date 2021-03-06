@@ -7,8 +7,8 @@ const Content1 = () => {
   return (
     <Container>
       <Row className={styles.content_text} >
-        <Col sm={12} lg={2} >
-          <h1 className="pb-sm-4 pb-md-4"> Team </h1>
+        <Col sm={12} lg={2} className="pb-2" >
+          <h1 className="pb-sm-4 pb-md-4 "> Team </h1>
         </Col>
         <Col sm={12} lg={6}>
           <p >S.O.S. Private Security offers only the highest caliber of officer because your

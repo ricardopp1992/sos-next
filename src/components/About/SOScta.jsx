@@ -8,7 +8,7 @@ const SOScta = () => {
       <img className={styles.connect_pattern} src="/img/home/connect-pattern.svg" alt="connect" />
       <div className={styles.connect_content}>
         <h1 className="primary-title">Send us an SOS signal</h1>
-        <a className="blue_btn" href="#">Connect</a>
+        <a className="blue_btn" href="/contact-us">Connect</a>
       </div>
     </div>
   );

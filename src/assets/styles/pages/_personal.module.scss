@@ -9,6 +9,13 @@
   @include mobile-xs {
       padding: 1.5rem;
   }
+  @include mobile {
+    padding: 0rem;
+  }
+
+  @include desktops {
+    padding: 0;
+  }
 }
 
 
@@ -23,7 +30,7 @@
 
     @include mobile-xs {
       padding-top: 2rem;
-      padding-left: 1rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -36,6 +43,12 @@
 
     span {
       padding-top: 1rem;
+      display: block;
+
+      @include desktops {
+        display: inline;
+        padding-left: 2rem;
+      }
     }
   }
 }

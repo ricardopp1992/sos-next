@@ -99,7 +99,7 @@ const ServicesImgLeftt = ({
       <Row className={`${styles.protect_section} mx-0 my-5 mx-lg-5`}>
         <Col sm={12} lg={6} >
           <img
-            className={`${styles.protect_img} rounded-xl`}
+            className={`${styles.protect_img}  rounded-xl`}
             src={img}
             alt="protect"
           />
@@ -199,7 +199,7 @@ const ServiceWhitoutListL = ({ img, title, paragraph, anchor }) => {
           <div className={styles.protect_content}>
             <h3 className="pb-1 subtitle text-dark">{title}</h3>
             <p className="text-dark">{paragraph}</p>
-            <Link href="/#"><a className="text-dark fs-6">{anchor}</a></Link>
+            <Link href="/training-and-courses"><a className="text-dark fs-6">{anchor}</a></Link>
           </div>
         </Col>
         <Col sm={12} lg={6}>

@@ -27,7 +27,7 @@ const FooterDefault = () => {
           <Link href="/">
             <a className={styles.footer_link}>Home</a>
           </Link>
-          <Link className={styles.footer_link} href="#">
+          <Link className={styles.footer_link} href="/contact-us">
             <a className={styles.footer_link}>Contact us</a>
           </Link>
         </div>
