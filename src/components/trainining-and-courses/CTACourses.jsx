@@ -11,7 +11,7 @@ const CTACourses = ({ text }) => {
         <Row>
           <Col sm={12} className={styles.cta_content}>
             <h3>{ text }</h3>
-            <Link href="/contact"><a className="blue_btn">Contact Us</a></Link>
+            <Link href="/contact-us"><a className="blue_btn">Contact Us</a></Link>
           </Col>
         </Row>
       </Container>

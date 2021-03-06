@@ -42,7 +42,7 @@ export default function Home() {
                 with the expertise and experience you hope to never need.
                 Only the most elite trained professionals are selected for the job.
                   </p>
-              <a className="blue_btn" href="#">About SOS Private Security</a>
+              <a className="blue_btn" href="/contact-us">About SOS Private Security</a>
             </div>
           </Col>
         </Row>
@@ -52,7 +52,7 @@ export default function Home() {
         <img className={styles.connect_pattern} src="/img/home/connect-pattern.svg" alt="connect" />
         <div className={styles.connect_content}>
           <h1 className="primary-title">Send us an SOS signal</h1>
-          <a className="blue_btn" href="#">Connect</a>
+          <a className="blue_btn" href="/contact-us">Connect</a>
         </div>
       </div>
     </Layout >

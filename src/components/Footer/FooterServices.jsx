@@ -24,7 +24,7 @@ const FooterServices = () => {
             situation from all angles.
           </h3>
           <div className="w-100 w-lg-50">
-            <a className="blue_btn" href="#">
+            <a className="blue_btn" href="/contact-us">
               Contact us to discuss your situation.
             </a>
           </div>
@@ -35,7 +35,7 @@ const FooterServices = () => {
               <Link href="/">
                 <a className={stylesF.footer_link}>Home</a>
               </Link>
-              <Link className={stylesF.footer_link} href="#">
+              <Link className={stylesF.footer_link} href="/contact-us">
                 <a className={stylesF.footer_link}>Contact us</a>
               </Link>
             </div>
