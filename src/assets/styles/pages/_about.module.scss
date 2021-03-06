@@ -169,15 +169,26 @@
     padding-bottom: 0;
   }
 
+  .value_image {
+    object-fit: cover;
+    width: 100%;
+    max-height: 20rem;
+
+    @include desktops {
+      object-fit: unset;
+      max-height: unset;
+    }
+  }
+
   h1, h3 {
     font-weight: bold;
   }
 
   .values_content {
-    padding: 0 3rem;
+    padding: 0 1rem;
 
     @include desktops {
-      padding: 0 5rem  0 5rem;
+      padding: 0 5rem  2rem 5rem;
     }
   }
 }
