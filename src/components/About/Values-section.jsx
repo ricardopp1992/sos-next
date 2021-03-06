@@ -8,7 +8,7 @@ const ValuesSection = () => {
     <Container fluid className={styles.values_section}>
       <Row className="justify-content-start">
         <Col sm={12} lg={6} xl={4} className="p-0 m-0 d-flex align-items-center">
-          <img className="w-100" src="/img/about/values-section.png" />
+          <img className={`${styles.value_image} w-100`} src="/img/about/values-section.png" />
         </Col>
         <Col  lg={6} xl={8} className={styles.values_content}>
           <h1 className={`${styles.text_color} w-100 pt-5 pb-3`}>Values</h1>

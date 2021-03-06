@@ -1,19 +1,37 @@
+@import '../../assets/styles/controls/theme-media-query.scss';
 @import '../../assets/styles/variables.scss';
 
 .navbar {
   padding: 15px 20px 10px;
-}
+  background-color: $sosBlack;
 
-.top {
-  background-color: transparent;
-  
-  > * {
-    background-color: transparent !important;
+  @include desktops {
+    background-color: transparent;
   }
 }
 
+.top {
+  @include desktops {
+    background-color: transparent;
+    transition: all ease-in-out .3s;
+    
+    > * {
+      background-color: transparent !important;
+    }
+  }
+
+}
+
 .down {
-  background-color: $sosBlack;
+  @include desktops {
+    background-color: $sosBlack;
+    transition: all ease-in-out .3s;
+
+    > * {
+      background-color: transparent !important;
+    }
+  }
+
 }
 
 .logo {

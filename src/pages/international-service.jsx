@@ -10,7 +10,7 @@ import QuoteAndCTA from '../components/QuoteAndCTA';
 const InternationalService = () => {
   return (
     <Layout title="International Service">
-      <HeroComponent title="International Service" image="/img/international/international-hero.png" />
+      <HeroComponent title="International Service" subtitle={<>Because security is a privilege, not a right.</>} image="/img/international/international-hero.png" />
       <AfterHeroInternational />
       <ContentInternational />
       <ContentInternational2 />

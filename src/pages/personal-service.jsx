@@ -11,6 +11,7 @@ const PersonalService = () => {
     <Layout title="Personal Service">
       <HeroComponent
         title="Personal Service"
+        subtitle={<> Safety is never a permanent state of affairs. <br/> ― Davos Seaworth</>}
         image="/img/personal-service/personal-service-hero.png" />
       <AfterHeroService />
       <PersonalServiceContent />

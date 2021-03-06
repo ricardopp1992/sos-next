@@ -9,7 +9,7 @@ const Hero = ({title, button, image, pattern}) => {
         <h1 className="primary-title">
           {title}
             </h1>
-        <a className={styles.black_btn} href="#">{button}</a>
+        <a className={styles.black_btn} href="/contact-us">{button}</a>
       </div>
       <div className={styles.hero_img_wrapper}>
         <img className={styles.hero_img} src={image} alt="hero img" />

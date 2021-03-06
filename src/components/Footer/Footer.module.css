@@ -28,11 +28,17 @@
   text-decoration: none;
 }
 
+.footer_mapsite {
+  order: 2;
+}
+
 .form_wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
+  order: 1;
 }
 
 .form_label {
@@ -41,7 +47,7 @@
 
 .email_box {
   display: inline-block;
-  width: 190px;
+  width: 70%;
   border: 2px solid #4AA8FF;
   border-radius: 0;
   background-color: transparent;
@@ -51,6 +57,7 @@
   display: inline-block;
   border: none;
   border-radius: 0;
+  width: 30%;
   background-color: #4AA8FF;
 }
 
@@ -67,5 +74,13 @@
   }
   .email_box {
     width: 309px;
+  }
+
+  .footer_mapsite {
+    order: 1;
+  }
+  
+  .form_wrapper {
+    order: 2;
   }
 }

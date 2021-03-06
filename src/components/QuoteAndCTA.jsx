@@ -21,7 +21,7 @@ const QuoteAndCTA = ({ quote = "", backgroundColor = false }) => {
               <p className="mb-5">Should is an ugly word. It means that there was a better choice. That you made a mistake and that the outcome could have been improved. Our clients never use the word "Should".</p>
             </Col>
             <Col lg={4} className={`${styles.btn_contact} offset-lg-2 d-flex align-items-center`}>
-              <a href="/#" className="blue_btn">You Should Contact Us</a>
+              <a href="/contact-us" className="blue_btn">You Should Contact Us</a>
             </Col>
           </Row>
         </Container>

@@ -10,7 +10,7 @@ import JoinTheTeam from '../components/Team/JoinTheTeam';
 export default function Team() {
   return (
     <Layout title="Team">
-      <Hero title="Team" image="/img/team/team-hero.png" />
+      <Hero title="Team" subtitle={<>We are serious about security.</>} image="/img/team/team-hero.png" />
       <Content1 />
       <TeamMember />
       <Leadership />

@@ -4,9 +4,9 @@ import { Col, Row, Container } from 'react-bootstrap';
 const ServiceContent = () => {
   return (
     <Container fluid>
-      <Row className="top-detail mx-0 mx-md-5">
+      <Row className="top-detail  mx-0 mx-md-2">
         <Col lg={3}>
-          <h3>What we do</h3>
+          <h3 className="mx-xs-2">What we do</h3>
         </Col>
         <Col lg={9}>
           <p>

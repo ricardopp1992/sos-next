@@ -10,7 +10,7 @@ import QuoteAndCTA from '../components/QuoteAndCTA'
 const CorporateService = () => {
   return (
     <Layout title="Corporate Service">
-      <HeroComponent title="Corporate Service" image="/img/corporate/hero-coporate.png" />
+      <HeroComponent title="Corporate Service" subtitle={<>In our highly visible environment, your organization can’t afford an incident.</>} image="/img/corporate/hero-coporate.png" />
       <AfterHeroCorporate />
       <ContentCorporate />
       <ContentCorporate2 />

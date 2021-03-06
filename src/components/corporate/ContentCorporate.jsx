@@ -33,7 +33,7 @@ const ContentCorporate = () => {
           <ParagraphItem>
             <h3>Team building and Training:</h3>
             <p>For the organizations looking to educate and develop their team, our trainings and courses provide peace of mind and strengthen your bench. </p>
-            <Link href="/#"><a>read more{` >>>`}</a></Link>
+            <Link href="/training-and-courses"><a>read more{` >>>`}</a></Link>
           </ParagraphItem>
           <ParagraphItem>
             <h3>Security Consulting:</h3>

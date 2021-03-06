@@ -10,7 +10,7 @@ import styles from './Navbar.module.scss';
 
 export default function Navmenu() {
   const [menuScrollStyle, setMenuScrollStyle] = useState();
-  const isUp = useScroll(400);
+  const isUp = useScroll(200);
 
   useEffect(() => {
     if (isUp) setMenuScrollStyle(styles.top);
@@ -42,7 +42,7 @@ export default function Navmenu() {
         <Link href="/partners"><a className={`nav-link`} >Partners</a></Link>
         <Link href="/contact-us"><a className={`nav-link`} >Contact</a></Link>
         <Nav className={styles.nav_btn}>
-          <Link href="#">
+          <Link href="/contact-us">
             <a className="blue_btn">Get Protection</a>
           </Link>
         </Nav>
