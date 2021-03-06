@@ -10,7 +10,7 @@ import styles from './Navbar.module.scss';
 
 export default function Navmenu() {
   const [menuScrollStyle, setMenuScrollStyle] = useState();
-  const isUp = useScroll(400);
+  const isUp = useScroll(200);
 
   useEffect(() => {
     if (isUp) setMenuScrollStyle(styles.top);

@@ -23,7 +23,7 @@ const FooterDefault = () => {
       <span className={styles.go_up}>Go up</span>
 
       <div className={styles.footer_main}>
-        <div className="my-2">
+        <div className={`my-2 ${styles.footer_mapsite}`}>
           <Link href="/">
             <a className={styles.footer_link}>Home</a>
           </Link>
