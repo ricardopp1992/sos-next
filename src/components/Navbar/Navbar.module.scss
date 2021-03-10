@@ -8,6 +8,21 @@
   @include desktops {
     background-color: transparent;
   }
+
+}
+
+.licence {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  top: 0;
+  padding-right: 2rem;
+
+  p{
+    font-size: .7rem;
+    font-weight: lighter;
+  }
 }
 
 .top {
@@ -61,7 +76,7 @@
 
 @media only screen and (min-width: 992px) {
   .navbar {
-    padding: 30px 80px 6px;
+    padding: 40px 80px 6px;
   }
   .logo {
     width: 100%;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Row} from 'react-bootstrap';
 
 import Logo from '../Logo/Logo';
 import Dropdown from './Dropdown';
@@ -18,6 +18,10 @@ export default function Navmenu() {
   }, [isUp]);
 
   return (
+  <>
+    <div className={styles.licence}>
+        <p className="pt-1">Licence Number: 122.001374</p>
+    </div>
     <Navbar className={`${styles.navbar} ${menuScrollStyle}`} collapseOnSelect expand="lg" variant="dark" fixed="top">
       <Navbar.Brand href="/">
         <Logo />
@@ -48,5 +52,6 @@ export default function Navmenu() {
         </Nav>
       </Navbar.Collapse>
     </Navbar>
+  </>
   );
 }
