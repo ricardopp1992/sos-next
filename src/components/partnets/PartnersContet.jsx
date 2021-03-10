@@ -11,7 +11,7 @@ const PartnersContet = () => {
       <Container>
         <Row>
           <Col sm={12}>
-            <h4>We’ve earned their respect of government entities, retired professionals and industry experts  providing unique partnerships and connections. These relationships allow us to serve more missions and add the sometimes necessary Special Operations Sector to their artillery.</h4>
+            <h4>We’ve earned the respect of government entities, retired professionals and industry experts  providing unique partnerships and connections. These relationships allow us to serve more missions and add the sometimes necessary Special Operations Sector to their artillery.</h4>
           </Col>
         </Row>
         <Row>
@@ -25,7 +25,7 @@ const PartnersContet = () => {
             <p>Our licensing and clearances expand the capabilities of vetted parters allowing everyone to bring more safety and options to the situation.</p>
           </ImageAndChildContent>
           <ImageAndChildContent right image="/img/partners/partener-content-4.png">
-            <p>Our reputation speaks for itself. We are willing to earn our partners’ respect and prove ourselves at every operation. The best form of flattery is a referral, and we are lucky to be flattered.</p>
+            <p>Our reputation speaks for itself. We are willing to earn our partners’ respect and prove ourselves at every operation. The best form of flattery is a referral, and we are blessed to be flattered.</p>
           </ImageAndChildContent>
         </Row>
       </Container>

@@ -10,8 +10,8 @@ const TeamMember = () => {
         <h2 className=" w-100 pb-5  pl-2">Our team member <span className={styles.special_color}>requiremts</span> :</h2>
         <Col sm={12} lg={3} >
           <p>Pass a physical fitness test
-            (State of Illinois P.O.W.E.R test
-            guidelines)</p>
+            (Combination of federal police agencies and military)
+          </p>
         </Col>
         <Col sm={12} lg={3}>
           <p>Licensed through the Illinois

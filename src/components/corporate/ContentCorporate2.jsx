@@ -20,7 +20,7 @@ const ContentCorporate2 = () => {
           </ParagraphItem>
           <ParagraphItem>
             <h3>Communities:</h3>
-            <p>From retirement, to excliusive residential communities there is a lot of responsibility to keep everyone safe. Our secret service like approach is ideal for domestic and international locations. </p>
+            <p>From retirement, to exclusive residential communities there is a lot of responsibility to keep everyone safe. Our secret service like approach is ideal for domestic and international locations. </p>
           </ParagraphItem>
           <ParagraphItem>
             <h3>News Crew Protection:</h3>

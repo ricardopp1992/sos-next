@@ -40,7 +40,7 @@ const Leadership = () => {
             arrow="/img/services/chevrons-right.png"
             list={credentials} />
           <LeadershipList
-            title="Awards"
+            title="Teams Awards"
             arrow="/img/services/chevrons-right.png"
             list={awards}
             className="offset-lg-4"/>

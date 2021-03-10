@@ -12,7 +12,8 @@ const protectiveList = [
   'Individual Extraction',
   'Rapid Deployment',
   'Executive Protection',
-  'Sex Trafficking '
+  'Sex Trafficking',
+  'Human Trafficking'
 ];
 
 const securityList = [
@@ -24,7 +25,8 @@ const securityList = [
   'Investigations ',
   'Convoy Escorts',
   'Extraction Teams',
-  'Property / Personal Residence Private Security team for high-net-worth individuals '
+  'Property / Personal Residence Private Security team for high-net-worth individuals',
+  'Reconnaissance Missions' 
 ]
 
 const ContentInternational = () => {
@@ -58,6 +60,7 @@ const ContentInternational = () => {
             <div className={styles.only_text_content}>
               <h3>Training: </h3>
               <p>Training foreign police and military forces</p>
+              <p>Security forces</p>
             </div>
           </ImageAndChildContent>
           <ImageAndChildContent image="/img/international/consulting.png">
