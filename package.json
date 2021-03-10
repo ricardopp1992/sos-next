@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^5.5.0",
+    "@tryghost/content-api": "^1.5.1",
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
     "imagemin-mozjpeg": "^9.0.0",

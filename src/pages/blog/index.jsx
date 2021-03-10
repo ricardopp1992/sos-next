@@ -1,31 +1,19 @@
-import BlogContent from '../../components/blog/Blog-content';
+import BlogContent from '../../components/blog/BlogContent';
 import Layout from '../../components/Layout/Layout';
+import { getArticles } from '../../lib/ghostClient';
 
-
-
-export default function Blog (  ) {
-  const articles = [
-    {
-    img:'/img/team/leadership.png',
-    title:'Im a title'
-    },
-    {
-    img:'/img/team/leadership.png',
-    title:'Im a title'
-    },
-    {
-    img:'/img/team/leadership.png',
-    title:'Im a title'
-    },
-    {
-    img:'/img/team/leadership.png',
-    title:'Im a title'
-    },
-  ]
+export default function Blog({ articles }) {
+  console.log(articles)
   return (
     <Layout title="Blog">
-      <BlogContent  article={articles}/>
-
+      <BlogContent articles={articles} />
     </Layout>
   );
+}
+
+export const getServerSideProps = async () => {
+  const articles = await getArticles();
+
+  console.log(articles);
+  return { props: { articles } }
 }
