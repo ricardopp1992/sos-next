@@ -25,7 +25,7 @@ const PartnersContet = () => {
             <p>Our licensing and clearances expand the capabilities of vetted parters allowing everyone to bring more safety and options to the situation.</p>
           </ImageAndChildContent>
           <ImageAndChildContent right image="/img/partners/partener-content-4.png">
-            <p>Our reputation speaks for itself. We are willing to earn our partners’ respect and prove ourselves at every operation. The best form of flattery is a referral, and we are blessed to be flattered.</p>
+            <p>Our reputation speaks for itself. We have to earn our partners’ respect and prove ourselves at every operation. The best form of flattery is a referral, and we are blessed to be flattered.</p>
           </ImageAndChildContent>
         </Row>
       </Container>
