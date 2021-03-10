@@ -32,7 +32,6 @@ const contentListFour = [
   "Undercover Assignments",
   "Reconnaissance Mission",
   "Ticket citations and criminal arrests",
-  "Searches and seizures",
   "Weapons recoveries",
   "Illicit money recoveries",
   "Illicit drug recoveries",
