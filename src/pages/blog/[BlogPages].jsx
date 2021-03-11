@@ -4,11 +4,11 @@ import BlogItems from '../../components/blog/BlogItems';
 import Layout from '../../components/Layout/Layout';
 
 import { getPost } from '../../lib/ghostClient';
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 
 import styles from '../../assets/styles/pages/_blog.module.scss';
 
-const BlogPages = ({articles}) => {
+const BlogPages = ({ articles }) => {
   if (!articles.html) {
     return (
       <Layout title="Blog">
@@ -19,30 +19,27 @@ const BlogPages = ({articles}) => {
       </Layout>
     );
   } else {
-  return (
-    <Layout title="Blog">
-      <div className={styles.section}>
+    return (
+      <Layout title="Blog">
         <img className={styles.imgArticle} src={articles.feature_image} alt="" />
-        <div>
-          <div>
-            <div className="row justify-content-center">
-              <div className="col-10">
-                <h1 className="pb-5 pt-5">{articles.title}</h1>
-                <div className={styles.articleHtml}  dangerouslySetInnerHTML={{ __html: articles.html }} />
-                </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Layout>
-  );
-}}
+        <Container className={styles.section}>
+          <Row>
+            <Col sm={12} className="pr-0">
+              <h1 className="pb-5 pt-5">{articles.title}</h1>
+              <div className={styles.articleHtml} dangerouslySetInnerHTML={{ __html: articles.html }} />
+            </Col>
+          </Row>
+        </Container>
+      </Layout>
+    );
+  }
+}
 export const getServerSideProps = async ({ params }) => {
   const route = params.BlogPages || '404';
   let articles;
 
   try {
-    articles = await getPost (route);
+    articles = await getPost(route);
   } catch (err) {
     console.log(err);
   }
