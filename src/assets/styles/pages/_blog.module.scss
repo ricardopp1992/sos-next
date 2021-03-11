@@ -6,14 +6,14 @@
   padding-bottom: 8rem;
 }
 
-.imgArticle{
+.imgArticle {
   width: 100%;
   display: block;
   margin: 0 auto;
   padding-top: 5rem;
   position: relative;
-  
-  @include desktops{
+
+  @include desktops {
     padding-top: 8rem;
     width: 60%;
   }
@@ -26,7 +26,7 @@
   h1 {
     font-size: 1.5rem;
     text-align: left;
-    
+
     @include desktops {
       font-size: 2.5rem;
       text-align: center;
@@ -37,7 +37,9 @@
     position: relative;
     text-align: start;
 
-    h2, h3, h4 {
+    h2,
+    h3,
+    h4 {
       font-size: 1.6rem !important;
       margin-bottom: 2rem;
       padding-top: 1.5rem;
@@ -46,12 +48,14 @@
     img {
       display: block;
       margin: 2rem auto;
-      width: 100%;
-      height: 20rem;
+      width: 80%;
+      height: 30rem;
       object-fit: cover;
     }
 
-    p, li, pre {
+    p,
+    li,
+    pre {
       text-align: justify;
       margin-bottom: 1.5rem;
       font-weight: normal;
@@ -59,12 +63,13 @@
     }
   }
 }
+
 //BlogContent Section
 
 .items {
   margin-left: 0rem;
 
-  @include desktops{
+  @include desktops {
     margin-left: 7rem;
   }
 }
@@ -74,20 +79,22 @@
   width: 100%;
 }
 
-.titleTex{
+.titleTex {
   text-decoration: none;
 }
+
 .titleText:hover {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 
 
-.text{
+.text {
   padding-top: 0.5rem;
   text-decoration: none;
   font-size: 15px;
 }
+
 .text:hover {
   text-decoration: none;
   color: white;
