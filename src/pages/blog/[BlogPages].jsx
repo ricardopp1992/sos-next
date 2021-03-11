@@ -1,10 +1,10 @@
 import React from 'react';
 import Link from 'next/link'
-import BlogItems from '../../components/blog/BlogItems';
+import { Col, Container, Row } from 'react-bootstrap';
+
 import Layout from '../../components/Layout/Layout';
 
 import { getPost } from '../../lib/ghostClient';
-import { Col, Container, Row } from 'react-bootstrap';
 
 import styles from '../../assets/styles/pages/_blog.module.scss';
 
@@ -24,8 +24,8 @@ const BlogPages = ({ articles }) => {
         <img className={styles.imgArticle} src={articles.feature_image} alt="" />
         <Container className={styles.section}>
           <Row>
-            <Col sm={12} className="pr-0">
-              <h1 className="pb-5 pt-5">{articles.title}</h1>
+            <Col sm={12} className="">
+              <h1 className="pb-lg-5 pt-5">{articles.title}</h1>
               <div className={styles.articleHtml} dangerouslySetInnerHTML={{ __html: articles.html }} />
             </Col>
           </Row>
