@@ -152,10 +152,18 @@
   font-size: 21px;
   font-weight: bold;
   line-height: 25px;
+  color: #4AA8FF;
+  transition: 0.3s;
+}
+
+.service_title:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .service_detail {
   line-height: 22px;
+  padding-top: 1rem;
 }
 
 @media only screen and (min-width: 992px) {

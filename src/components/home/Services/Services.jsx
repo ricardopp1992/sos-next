@@ -14,7 +14,7 @@ const Services = () => {
             title="Personal"
             description={`No matter your status, wealth, or popularity, enjoy life while resting easy knowing you are protected.`}
             image="/img/home/service-1.jpg"
-            href="/personal" />
+            href="/personal-service" />
         </Col>
         <Col lg={4}>
           <ServiceItem
@@ -24,7 +24,7 @@ const Services = () => {
               tense, or threatening situations.
             `}
             image="/img/home/service-2.jpg"
-            href="/corporate" />
+            href="/corporate-service" />
         </Col>
         <Col lg={4}>
           <ServiceItem
@@ -35,7 +35,7 @@ const Services = () => {
               but to avoid an international incident.
             `}
             image="/img/home/service-3.jpg"
-            href="/international" />
+            href="/international-service" />
         </Col>
       </Row>
     </div>
@@ -45,8 +45,8 @@ const Services = () => {
 const ServiceItem = ({ title, description, image, href}) => {
   return (
     <div className={styles.service_item}>
-      <img className={`${styles.service_img} rounded-xl`} src={image} alt="service" />
-      <h4 className={styles.service_title}>{ title }</h4>
+      <img className={`${styles.service_img} mb-2 rounded-xl`} src={image} alt="service" />
+      <Link href={href}><a className={styles.service_title}>{ title }</a></Link>
       <p className={styles.service_detail}>{ description }</p>
       <Link href={href}><a>Read More</a></Link>
     </div>

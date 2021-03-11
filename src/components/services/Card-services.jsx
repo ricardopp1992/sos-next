@@ -8,7 +8,6 @@ const contentListOne = [
   "Executive Protection",
   "Dignitary Protection",
   "News Crew Protection",
-  "Individual Extraction",
   "Rapid Deployment",
   "Extraction Teams",
 ];
@@ -24,16 +23,15 @@ const contentListTwo = [
 const contentListThree = [
   "Warehouse, Garages",
   "Vehicle Patrol",
-  "Section 8-clean up task force",
   "Residence Security",
   "Event Security",
 ];
 
 const contentListFour = [
   "Investigations",
-  "Undercover and reconnaissance",
+  "Undercover Assignments",
+  "Reconnaissance Mission",
   "Ticket citations and criminal arrests",
-  "Searches and seizures",
   "Weapons recoveries",
   "Illicit money recoveries",
   "Illicit drug recoveries",

@@ -11,7 +11,7 @@ const ConsultationSection = () => {
           <h4 className={styles.color_text}>Consultations</h4>
           <p className={styles.consult_detail}>
             Let our team of experts guide you towards the appropriate solution
-            to fit your needs. We are dead serious about protecting your assets
+            to fit your needs. We are deeply committed to protecting your assets
             and bring creative solutions to ensure success.
           </p>
         </Col>
@@ -33,9 +33,9 @@ const ConsultationSection = () => {
           <p className={styles.consult_detail}>
             Our incredible team is more than capable to handle any situation
             thrown at them. We are always striving to avoid situations, however
-            when the indeed arises we are capable of XYZ. Have the right to
-            detain, cuff, and use gas canisters when necessary. Our team is
-            expertly trained on the porper show of force.
+            when the indeed arises we are capable of XYZ. We have right to use
+            non lethal force when necessary. Our team is expertly trained on 
+            the porper show of force.
           </p>
         </Col>
         <Col lg={12} className={styles.btn}>
