@@ -4,12 +4,11 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../../assets/styles/pages/_contact.module.scss';
 
 const Contact = () => {
-
   const HandleSendEmail = (event) => {
     event.preventDefault();
     const { name, surname, email, message } = event.currentTarget;
 
-    // if (name && surname && email && message) {
+     //if (name && surname && email && message) {
       const response = fetch(`api/send-message`, {
         method: 'POST',
         body: JSON.stringify({
@@ -19,15 +18,13 @@ const Contact = () => {
           message: message.value,
         }),
       })
-        .then((resp) => resp.json())
+        .then((res) => res.json())
         .then((data) => {
-          // AQUI VA TODO RESPECTO A UN FETCH SUCCESSFULL
           console.log('YEEEI')
         })
         .catch((err) => {
-          //TODO RESPECTO A ERRORES
           console.error(err)
-        });
+    });
   };
   return (
     <div className="bg-white">
