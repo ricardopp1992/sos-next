@@ -3,12 +3,12 @@ import Link from 'next/link'
 import BlogItems from '../../components/blog/BlogItems';
 import Layout from '../../components/Layout/Layout';
 
-import { getPost, getrelatedPost } from '../../lib/ghostClient';
+import { getPost } from '../../lib/ghostClient';
 import { Container } from 'react-bootstrap';
 
 import styles from '../../assets/styles/pages/_blog.module.scss';
 
-const BlogPages = ({articles, relatedPost}) => {
+const BlogPages = ({articles}) => {
   if (!articles.html) {
     return (
       <Layout title="Blog">
@@ -39,19 +39,17 @@ const BlogPages = ({articles, relatedPost}) => {
 }}
 export const getServerSideProps = async ({ params }) => {
   const route = params.BlogPages || '404';
-  let articles, relatedPost;
+  let articles;
 
   try {
     articles = await getPost (route);
-    relatedPost = await getrelatedPost(article.primary_tag.slug);
   } catch (err) {
     console.log(err);
   }
 
   if (!articles) articles = {};
-  if (!relatedPost) relatedPost = [];
 
-  return { props: { articles, relatedPost } };
+  return { props: { articles } };
 };
 
 export default BlogPages;

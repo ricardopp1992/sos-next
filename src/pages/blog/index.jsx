@@ -3,7 +3,6 @@ import Layout from '../../components/Layout/Layout';
 import { getArticles } from '../../lib/ghostClient';
 
 export default function Blog({ articles }) {
-  console.log(articles)
   return (
     <Layout title="Blog">
       <BlogContent articles={articles} />
@@ -11,9 +10,17 @@ export default function Blog({ articles }) {
   );
 }
 
-export const getServerSideProps = async () => {
-  const articles = await getArticles();
+export const getServerSideProps = async (context) => {
+  let articles;
 
-  console.log(articles);
+  try {
+    articles = await getArticles();
+  } catch (err) {
+    articles = []
+    console.error(err);
+  }
+
+  if (!articles) articles = [];
+
   return { props: { articles } }
 }
