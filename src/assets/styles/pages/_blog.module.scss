@@ -49,8 +49,12 @@
       display: block;
       margin: 2rem auto;
       width: 80%;
-      height: 30rem;
+      height: 20rem;
       object-fit: cover;
+
+      @include desktops {
+        height: 30rem;
+      }
     }
 
     p,
