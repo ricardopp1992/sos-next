@@ -4,13 +4,19 @@ import { Container, Row, Col } from 'react-bootstrap';
 import styles from '../../assets/styles/pages/_contact.module.scss';
 
 const Contact = () => {
+  const [isSent, setIsSent] = useState(false);
+  const [submitted, setSubmitted] = useState(false)
+  const [wasSuccess, setWasSuccess] = useState(true);
+  const [errorMessage, setErrorMessage] = useState('')
 
   const HandleSendEmail = (event) => {
     event.preventDefault();
     const { name, surname, email, message } = event.currentTarget;
+    console.log(name)
+    console.log(`${name.name} surname:${surname.value} ${email.value} ${message.value}`);
 
-    // if (name && surname && email && message) {
-      const response = fetch(`api/send-message`, {
+    if (name.value && surname.value && email.value && message.value && !isSent) {
+      fetch(`/api/send-message`, {
         method: 'POST',
         body: JSON.stringify({
           name: name.value,
@@ -19,16 +25,35 @@ const Contact = () => {
           message: message.value,
         }),
       })
-        .then((resp) => resp.json())
+        .then((resp) => {
+          if (resp.status !== 200) throw Error('Server error')
+          return resp.json();
+        })
         .then((data) => {
-          // AQUI VA TODO RESPECTO A UN FETCH SUCCESSFULL
-          console.log('YEEEI')
+          setIsSent(true);
+          setWasSuccess(true);
+          setErrorMessage('Your message has been sent successfully! We will be contact soon')
         })
         .catch((err) => {
-          //TODO RESPECTO A ERRORES
           console.error(err)
+          setIsSent(false);
+          setWasSuccess(false);
+          setErrorMessage('There was an error from the server, please try again! or reach out us here email@sos.com')
         });
+    } else if (name.value && surname.value && email.value && message.value && isSent) {
+      setIsSent(true);
+    } else {
+      setIsSent(false);
+      setWasSuccess(false);
+      setErrorMessage(`Please check fields: ${invalidInput(name)} ${invalidInput(surname)} ${invalidInput(email)} ${invalidInput(message)}` )
+    }
+    setSubmitted(true);
   };
+
+  const invalidInput = (input) => {
+    return !input.value ? input.name + ',' : '';
+  }
+
   return (
     <div className="bg-white">
       <Container>
@@ -94,6 +119,14 @@ const Contact = () => {
                 Send
               </button>
             </Col>
+            {
+              submitted &&
+              <Col sm={12} md={12} lg={12} className={styles.message_container}>
+                <div className={`${wasSuccess ? 'alert-success' : 'alert-danger'} text-left pl-lg-5 ${styles.contant_message}`}>
+                  { wasSuccess ? errorMessage : errorMessage }
+                </div>
+              </Col>
+            }
           </form>
         </Row>
       </Container>

@@ -15,5 +15,5 @@ export default (req, res) => {
     html: `${name}, ${message}, ${email}`
   }
   console.log(JSON.stringify(data))
-  res.status(200).send()
+  res.status(200).json({ response: 'OK', message: 'message sent' })
 }
