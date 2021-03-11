@@ -17,6 +17,7 @@ const BlogContent = ({ articles }) => {
                 img={article.feature_image}
                 title={article.title}
                 slug={article.slug}
+                excerpt={article.excerpt}
                 />
             ))
           }
