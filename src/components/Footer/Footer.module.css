@@ -1,5 +1,5 @@
 .footer {
-  padding: 23px 20px 55px;
+  padding: 23px 20px 40px;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -26,6 +26,11 @@
 
 .footer_link:hover {
   text-decoration: none;
+}
+
+.footer_licence{
+  font-weight: normal;
+  margin-top: 1rem;
 }
 
 .footer_mapsite {
@@ -62,6 +67,8 @@
 }
 
 .copyright {
+  position: absolute;
+  bottom: 5%;
   opacity: 0.4;
 }
 

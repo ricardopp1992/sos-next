@@ -39,8 +39,8 @@ const FooterDefault = ({ activeGoUp }) => {
           </Form>
         </div>
       </div>
-
-      <span className={styles.copyright}>COPYRIGHT @ 2021</span>
+      <span className={styles.copyright}>copyright @ 2021</span>
+      <p className={styles.footer_licence}>Licence Number: 122.001374</p>
     </footer>
   );
 }

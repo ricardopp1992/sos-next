@@ -1,29 +1,26 @@
 import React from 'react'
-import { Row } from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
-
-import styles from '../../assets/styles/pages/_blog.module.scss';
 import BlogItems from './BlogItems';
 
 const BlogContent = ({ articles }) => {
-  return(
-    <div className={styles.items}>
-      <div className="pt-5 pt-lg-5">
+  return (
+    <Container className="pt-5">
+      <h2 className="pt-5 mt-5">Articles</h2>
       <Row>
-          {
-            articles.map(article => (
-              <BlogItems
-                key={article.id}
-                img={article.feature_image}
-                title={article.title}
-                slug={article.slug}
-                excerpt={article.excerpt}
-                />
-            ))
-          }
-        </Row>
-      </div>
-    </div>
+        {
+          articles.map(article => (
+            <BlogItems
+              key={article.id}
+              img={article.feature_image}
+              title={article.title}
+              slug={article.slug}
+              excerpt={article.excerpt}
+            />
+          ))
+        }
+      </Row>
+    </Container>
   )
 }
 

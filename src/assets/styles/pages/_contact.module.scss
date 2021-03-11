@@ -69,9 +69,10 @@
   .btn{
     text-align: center;
     padding-bottom: 2rem;
-
+    
     @include desktops {
       padding-left: 8.2rem;
+      padding-bottom: 1rem;
     }
   }
 
@@ -79,5 +80,19 @@
     color: white;
     border: unset;
     text-align: center;
+  }
+
+  .message_container {
+    height: 8rem;
+
+    @include desktops {
+      height: 5rem;
+    }
+
+    .contant_message {
+      width: 80%;
+      padding: 1rem;
+      margin: 1rem auto;
+    }
   }
 }
