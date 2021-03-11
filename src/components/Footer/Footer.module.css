@@ -28,6 +28,11 @@
   text-decoration: none;
 }
 
+.footer_licence{
+  font-weight: normal;
+
+}
+
 .footer_mapsite {
   order: 2;
 }

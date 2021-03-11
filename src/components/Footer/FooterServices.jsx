@@ -54,6 +54,7 @@ const FooterServices = () => {
             </div>
           </div>
           <span className={stylesF.copyright}>COPYRIGHT @ 2021</span>
+          <p className={stylesF.footer_licence}>Licence Number: 122.001374</p>
         </div>
       </footer>
     </>

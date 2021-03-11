@@ -32,7 +32,7 @@ const Contact = () => {
         .then((data) => {
           setIsSent(true);
           setWasSuccess(true);
-          setErrorMessage('Your message has been sent successfully! We will be contact soon')
+          setErrorMessage('Your message has been sent successfully! We\'ll contact you soon')
         })
         .catch((err) => {
           console.error(err)
