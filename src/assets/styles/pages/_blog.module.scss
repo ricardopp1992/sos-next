@@ -1,4 +1,53 @@
-.img{
-  width: 70%;
-  padding-top: 2rem;
+@import '../controls/theme-media-query.scss';
+//[BlogPages] secction
+
+.Nosection {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+}
+
+.section {
+  position: relative;
+  text-align: center;
+  
+  .imgArticle{
+    width: 100%;
+    padding-top: 8rem;
+    position: relative;
+
+    @include desktops{
+      width: 60%;
+    }
+  }
+
+  .articleHtml {
+    position: relative;
+    text-align: start;
+    h2 {
+      font-size: 1.6rem !important;
+      margin-bottom: 1rem;
+      padding-top: 1rem;
+    }
+
+    p, li {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+      margin-left: 2rem;
+    }
+  }
+}
+//BlogContent Section
+
+.items {
+  margin-left: 0rem;
+
+  @include desktops{
+    margin-left: 7rem;
+  }
+}
+
+//BlogItems Section
+.img {
+  width: 100%;
+  padding-bottom: 1rem;
 }

@@ -1,22 +1,18 @@
 import React from 'react';
 import Link from 'next/link';
-import { Container } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 
 import styles from '../../assets/styles/pages/_blog.module.scss';
 
-const BlogItems = ({ img, title }) => {
+const BlogItems = ({ img, title, slug, excerpt }) => {
 
   return (
-    <Container className="">
-      <div className="article-item col-lg-4 col-md-5 col-sm-7 col-xs-8 my-5">
-        <div className=" h-50 d-flex flex-column justify-content-evenly rounded-15 px-5 py-5 gr-hover-3 mb-9 ">
-          <div className="mb-14">
-            <img className={` ${styles.img} rounded-lg`} src={img} />
-          </div>
-          <Link href={''}><a className="text-justify pt-2 fw-normal">{title}</a></Link>
-        </div>
+      <div className="col-lg-4 col-md-12 col-sm-12 col-xs-12 pt-5 mt-5">
+        <Col lg={10}>
+            <img className={styles.img} src={img} />
+          <Link href={`/blog/${slug}`}><a className="text-justify fw-normal">{title}</a></Link>
+        </Col>
       </div>
-    </Container>
   );
 };
 

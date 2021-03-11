@@ -44,6 +44,7 @@ export default function Navmenu() {
           <NavDropdown.Item className={`${styles.nav_link} dropdown-item text-white`} href="/team">Team</NavDropdown.Item>
         </Dropdown>
         <Link href="/partners"><a className={`nav-link`} >Partners</a></Link>
+        <Link href="/blog"><a className={`nav-link`} >Blog</a></Link>
         <Link href="/contact-us"><a className={`nav-link`} >Contact</a></Link>
         <Nav className={styles.nav_btn}>
           <Link href="/contact-us">
