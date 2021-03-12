@@ -12,8 +12,6 @@ const Contact = () => {
   const HandleSendEmail = (event) => {
     event.preventDefault();
     const { name, surname, email, message } = event.currentTarget;
-    console.log(name)
-    console.log(`${name.name} surname:${surname.value} ${email.value} ${message.value}`);
 
     if (name.value && surname.value && email.value && message.value && !isSent) {
       fetch(`/api/send-message`, {
@@ -38,7 +36,7 @@ const Contact = () => {
           console.error(err)
           setIsSent(false);
           setWasSuccess(false);
-          setErrorMessage('There was an error from the server, please try again! or reach out us here email@sos.com')
+          setErrorMessage('There was an error on the server, please try again! or reach out us here work@sosprivatesecurity.com')
         });
     } else if (name.value && surname.value && email.value && message.value && isSent) {
       setIsSent(true);
