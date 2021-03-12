@@ -21,12 +21,12 @@ export default (req, res) => {
     `
   }
 
-  mg.messages().send(data, function (error, body) {
+  /*mg.messages().send(data, function (error, body) {
     if (error || !body) {
       console.log(error);
       return res.status(400).end(error || 'No email sent');
-    }
+    }});*/
 
-    return res.status(200).json(body);
-  });
+    return res.status(400).json({message:"todo ok"});
+  
 }
