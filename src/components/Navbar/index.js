@@ -19,9 +19,6 @@ export default function Navmenu() {
 
   return (
   <>
-    <div className={styles.licence}>
-        <p className="pt-1">Licence Number: 122.001374</p>
-    </div>
     <Navbar className={`${styles.navbar} ${menuScrollStyle}`} collapseOnSelect expand="lg" variant="dark" fixed="top">
       <Navbar.Brand href="/">
         <Logo />
